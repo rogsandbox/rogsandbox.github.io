@@ -303,6 +303,7 @@ p {
 	font-weight: normal;
 	line-height: 1.5;
 	color: var(--tertiary-light);
+	text-shadow: 1.3px 1.3px 1px var(--primary-light);
 }
 
 .subtext-md {
@@ -322,7 +323,7 @@ p {
 @media screen and (min-width: 750px) {
 	.hero {
 		background-image: url("/images/hero-background-image-desktop.png");
-		background-position: center;
+		background-position: top center;
 		background-attachment: fixed;
 	}
 
