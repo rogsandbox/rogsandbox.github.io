@@ -64,11 +64,10 @@ p {
 
 .hero {
 	position: relative;
-	background-color: var(--primary-dark);
-	background-image: url("/images/hero-background-image.png");
+	background-image: url("/images/hero-background-image-mobile.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: top right;
 	background-attachment: fixed;
 	width: 100%;
 	height: 100%;
@@ -321,6 +320,11 @@ p {
 }
 
 @media screen and (min-width: 750px) {
+	.hero {
+		background-image: url("/images/hero-background-image-desktop.png");
+		background-position: center;
+	}
+
 	.hero > .inner > .content {
 		flex-direction: row;
 	}
