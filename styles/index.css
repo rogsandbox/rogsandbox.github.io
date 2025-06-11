@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+	/* Units */
+	--16px-in-rem: 1.008rem;
+	--14px-in-rem: 0.882rem;
+
+	/* Typography */
+	--text-display-1: 4.032rem; /* 64px */
+	--text-display-2: 3.024rem; /* 48px */
+
+	--text-h1: 2.268rem; /* 36px */
+	--text-h2: 1.89rem; /* 30px */
+	--text-h3: 1.512rem; /* 24px */
+	--text-h4: 1.26rem; /* 20px */
+
+	--text-lg: 1.134rem; /* 18px */
+	--text-base: var(--16px-in-rem); /* 16px */
+	--text-sm: var(--14px-in-rem); /* 14px */
+	--text-xm: 0.756rem; /* 12px */
+
+	--btn-text-lg: var(--16px-in-rem); /* 16px */
+	--btn-text-base: var(--14px-in-rem); /* 14px */
+
+	--nav-link-text-lg: var(--16px-in-rem); /* 16px */
+	--nav-link-text-base: var(--14px-in-rem); /* 14px */
+
+	--subtext-line-height: 1.35;
+
+	--card-border-radius: 1rem;
+
+	/* Colors: 60-30-10 Rule */
+	--primary-dark: #ffffff;
+	--primary-light: rgba(254, 255, 254, 0.7);
+
+	--secondary-dark: #145fef;
+	--secondary-light: rgba(20, 95, 239, 0.7);
+
+	--tertiary-dark: #1a1a1a;
+	--tertiary-light: rgba(26, 26, 26, 0.7);
+}
+
+html,
+body {
+	font-family: Roboto;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.w-full {
+	max-width: 73.125rem; /* 1170px */
+}
+
+.hero {
+	position: relative;
+	background-color: var(--primary-dark);
+	background-image: url("/images/hero-background-image.png");
+	background-repeat: no-repeat;
+	/* background-size: 100% auto; */
+	/* background-position: top center; */
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.hero::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background-color: rgba(0, 0, 0, 0.7);
+	filter: blur(4px);
+}
+
+.hero > .inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	padding: 0 1rem;
+	height: 70vh;
+}
+
+.hero > .inner > .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.hero > .inner > .content > .left {
+	width: 130%;
+	max-width: 100%;
+}
+
+.hero > .inner > .content > .right {
+	width: 70%;
+}
+
+.hero > .inner > .content > .left > .pitch-experience {
+	font-weight: 700;
+	font-size: var(--16px-in-rem);
+	color: var(--tertiary-light);
+}
+
+.hero > .inner > .content > .left > .heading-lg {
+	/* max-width: 35.25rem; */
+	margin-top: 0.5rem;
+}
+
+.hero > .inner > .content > .left > .subtext-lg {
+	margin-top: 0.75rem;
+	max-width: 38.125rem;
+}
+
+.btn {
+	text-decoration: none;
+	user-select: none;
+	cursor: pointer;
+	padding: 14px 30px 11px;
+	border-radius: 624.938rem; /* 999px */
+	font-size: var(--16px-in-rem);
+	font-weight: 700;
+	position: relative;
+	display: inline-block;
+	line-height: 1.5;
+	transition: all 0.3s ease;
+}
+
+.btn-secondary {
+	background-color: var(--secondary-dark);
+	border: 1px solid var(--secondary-dark);
+	color: var(--primary-dark);
+}
+
+.btn-secondary:hover {
+	background-color: var(--primary-dark);
+	border: 1px solid var(--secondary-dark);
+	color: var(--secondary-dark);
+}
+
+.btn-secondary:visited,
+.btn-secondary:active {
+	color: var(--primary-dark);
+}
+
+.emphasize-text {
+	font-weight: bold;
+	color: var(--primary-dark);
+	text-shadow: 2.5px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.heading-lg {
+	font-weight: normal;
+	font-size: var(--text-display-2);
+	color: var(--tertiary-dark);
+}
+
+.subtext-lg {
+	font-size: var(--text-h4);
+	font-weight: normal;
+	line-height: 1.5;
+	color: var(--tertiary-light);
+}
+
+@media screen and (min-width: 750px) {
+	.hero > .inner > .content {
+		flex-direction: row;
+	}
+}
