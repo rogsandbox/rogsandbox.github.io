@@ -91,7 +91,7 @@ p {
 	align-items: center;
 	margin: 0 auto;
 	padding: 0 1rem;
-	height: 70vh;
+	height: 55vh;
 }
 
 .hero > .inner > .content {
@@ -324,6 +324,10 @@ p {
 		background-image: url("/images/hero-background-image-desktop.png");
 		background-position: center;
 		background-attachment: fixed;
+	}
+
+	.hero > .inner {
+		height: 70vh;
 	}
 
 	.hero > .inner > .content {
