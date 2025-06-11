@@ -67,8 +67,6 @@ p {
 	background-color: var(--primary-dark);
 	background-image: url("/images/hero-background-image.png");
 	background-repeat: no-repeat;
-	/* background-size: 100% auto; */
-	/* background-position: top center; */
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -83,7 +81,7 @@ p {
 	bottom: 0;
 	width: 100%;
 	height: 1px;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: var(--secondary-light);
 	filter: blur(4px);
 }
 
@@ -121,7 +119,6 @@ p {
 }
 
 .hero > .inner > .content > .left > .heading-lg {
-	/* max-width: 35.25rem; */
 	margin-top: 0.5rem;
 }
 
@@ -129,6 +126,54 @@ p {
 	margin-top: 0.75rem;
 	max-width: 38.125rem;
 }
+
+.main {
+	padding: 6.5rem 0;
+}
+
+.main > .companies > .heading-md,
+.main > .projects > .heading-md {
+	text-align: left;
+	margin-bottom: 2.5rem;
+}
+
+/* .main > .companies > .inner > .item > .subtext-sm,
+.main > .projects > .inner > .item > .subtext-sm {
+	margin-top: 0.75rem;
+} */
+
+.main > .companies {
+	margin-bottom: 6.5rem !important;
+}
+
+.companies.w-full,
+.projects.w-full {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.companies > .inner,
+.projects > .inner {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 1rem;
+}
+
+.companies > .inner > .item,
+.projects > .inner > .item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* .companies > .inner > .item,
+.projects > .inner > .item {
+	border: 2px solid var(--tertiary-dark);
+	border-radius: 5px;
+} */
 
 .btn {
 	text-decoration: none;
@@ -173,8 +218,28 @@ p {
 	color: var(--tertiary-dark);
 }
 
+.heading-md {
+	font-weight: normal;
+	font-size: var(--text-h3);
+	color: var(--tertiary-dark);
+}
+
 .subtext-lg {
 	font-size: var(--text-h4);
+	font-weight: normal;
+	line-height: 1.5;
+	color: var(--tertiary-light);
+}
+
+.subtext-md {
+	font-size: var(--text-lg);
+	font-weight: normal;
+	line-height: 1.5;
+	color: var(--tertiary-light);
+}
+
+.subtext-sm {
+	font-size: var(--text-base);
 	font-weight: normal;
 	line-height: 1.5;
 	color: var(--tertiary-light);
@@ -183,5 +248,10 @@ p {
 @media screen and (min-width: 750px) {
 	.hero > .inner > .content {
 		flex-direction: row;
+	}
+
+	.companies > .inner,
+	.projects > .inner {
+		grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
 	}
 }
