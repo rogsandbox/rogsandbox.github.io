@@ -114,7 +114,7 @@ p {
 
 .hero > .inner > .content > .left > .pitch-experience {
 	font-weight: 700;
-	font-size: var(--16px-in-rem);
+	font-size: clamp(var(--14px-in-rem, 4vw, var(--16px-in-rem)));
 	color: var(--tertiary-light);
 }
 
@@ -289,18 +289,18 @@ p {
 
 .heading-lg {
 	font-weight: normal;
-	font-size: var(--text-display-2);
+	font-size: clamp(var(--text-h2), 4vw, var(--text-display-2));
 	color: var(--tertiary-dark);
 }
 
 .heading-md {
 	font-weight: normal;
-	font-size: var(--text-h3);
+	font-size: clamp(var(--text-lg), 4vw, var(--text-h3));
 	color: var(--tertiary-dark);
 }
 
 .subtext-lg {
-	font-size: var(--text-h4);
+	font-size: clamp(var(--text-base), 4vw, var(--text-h4));
 	font-weight: normal;
 	line-height: 1.5;
 	color: var(--tertiary-light);
