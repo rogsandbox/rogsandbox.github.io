@@ -90,7 +90,7 @@ p {
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-	padding: 0 1rem;
+	padding: 0 1.5rem;
 	height: 55vh;
 }
 
@@ -127,7 +127,7 @@ p {
 }
 
 .main {
-	padding: 6.5rem 0;
+	padding: clamp(3.5rem, 4vw, 6.5rem) 0;
 }
 
 .main > .companies > .heading-md,
@@ -137,7 +137,7 @@ p {
 }
 
 .main > .companies {
-	margin-bottom: 6.5rem !important;
+	margin-bottom: 5.5rem !important;
 }
 
 .companies.w-full,
@@ -146,14 +146,22 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	margin: 0 auto;
-	padding: 0 1rem;
+	padding: 0 1.5rem;
 }
 
 .companies > .inner,
 .projects > .inner {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
-	gap: 1rem;
+	gap: 2.5rem;
+}
+
+.companies > .inner {
+	gap: 2.5rem;
+}
+
+.projects > .inner {
+	gap: 1.5rem;
 }
 
 .companies > .inner > .item,
@@ -219,7 +227,7 @@ p {
 	justify-content: center;
 	align-items: flex-start;
 	margin: 0 auto;
-	padding: 6.6rem 1rem;
+	padding: 6.6rem 1.5rem;
 	gap: 1.5rem;
 }
 
@@ -340,7 +348,9 @@ p {
 		grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
 	}
 
-	/* image designs */
+	.companies > .inner {
+		gap: 1rem;
+	}
 
 	.footer-pitch {
 		flex-direction: row;
