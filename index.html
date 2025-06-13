@@ -621,8 +621,20 @@
 			const socialContent = document.querySelector(".social-content");
 			let lastScroll = 0;
 
+			document.addEventListener("DOMContentLoaded", () => {
+				const headerHeight = socialContent.offsetHeight;
+
+				if (socialWrapper.offsetWidth <= 540) {
+					socialWrapper.style.height = headerHeight + "px";
+				}
+			});
+
 			window.addEventListener("scroll", () => {
 				const headerHeight = socialContent.offsetHeight;
+
+				if (socialWrapper.offsetWidth <= 540) {
+					return;
+				}
 
 				if (window.scrollY > 100) {
 					socialWrapper.style.height = headerHeight + "px";
