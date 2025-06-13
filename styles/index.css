@@ -43,6 +43,7 @@
 html,
 body {
 	font-family: Roboto;
+	background-color: rgba(0, 41, 255, 0.05);
 }
 
 html,
@@ -233,7 +234,7 @@ p {
 	position: relative;
 }
 
-.footer-pitch::after {
+/* .footer-pitch::after {
 	content: "";
 	position: fixed;
 	width: 100%;
@@ -242,13 +243,9 @@ p {
 	left: 0;
 	margin: 0;
 	padding: 0;
-	background-image: linear-gradient(
-		90deg,
-		var(--primary-light),
-		rgba(0, 41, 255, 0.2)
-	);
+	background-image: linear-gradient(90deg, var(--primary-light));
 	z-index: -1;
-}
+} */
 
 .footer-pitch > .avatar {
 	width: 300px;
