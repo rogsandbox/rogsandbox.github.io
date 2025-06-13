@@ -43,7 +43,11 @@
 html,
 body {
 	font-family: Roboto;
-	background-color: rgba(0, 41, 255, 0.05);
+	background-image: linear-gradient(
+		to bottom right,
+		var(--primary-light),
+		rgba(0, 41, 255, 0.15)
+	);
 }
 
 html,
@@ -368,6 +372,15 @@ p {
 }
 
 @media screen and (min-width: 750px) {
+	html,
+	body {
+		background-image: linear-gradient(
+			90deg,
+			var(--primary-light),
+			rgba(0, 41, 255, 0.15)
+		);
+	}
+
 	.hero {
 		background-image: url("/images/hero-background-image-desktop.png");
 		background-position: top center;
