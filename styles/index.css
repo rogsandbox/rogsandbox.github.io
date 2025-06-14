@@ -73,6 +73,10 @@ p {
 	height: 100%;
 }
 
+.hero .subtext-lg {
+	text-shadow: 1.3px 1.3px 1px var(--primary-light);
+}
+
 .social-wrapper {
 	height: auto;
 }
@@ -312,7 +316,7 @@ p {
 	width: 100%;
 	height: 100%;
 	position: relative;
-	background-color: rgba(0, 41, 255, 0.15);
+	background-color: rgba(0, 41, 255, 0.149);
 }
 
 /* .card:not(.row-reverse) > .card-text::before {
@@ -417,7 +421,7 @@ p {
 	background-image: linear-gradient(
 		180deg,
 		var(--primary-light),
-		rgba(0, 41, 255, 0.15)
+		rgba(0, 41, 255, 0.4)
 	);
 }
 
@@ -554,7 +558,6 @@ p {
 	font-weight: normal;
 	line-height: 1.5;
 	color: var(--tertiary-light);
-	text-shadow: 1.3px 1.3px 1px var(--primary-light);
 }
 
 .subtext-md {
@@ -634,6 +637,7 @@ p {
 		border-radius: 0;
 		background-image: none;
 		background-color: var(--primary-dark);
+		/* background-color: #b3bfff; */
 	}
 
 	.social-content::after {
@@ -666,6 +670,7 @@ p {
 		font-weight: 700;
 		font-size: var(--14px-in-rem);
 		color: var(--tertiary-light);
+		/* color: var(--tertiary-light); */
 	}
 
 	.social-content ul > li > a:not([data-social="youtube"]) {
@@ -693,6 +698,10 @@ p {
 
 	.hero > .inner > .content {
 		flex-direction: row;
+	}
+
+	.hero .subtext-lg {
+		text-shadow: none;
 	}
 
 	.companies > .inner {
