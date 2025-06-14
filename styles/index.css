@@ -185,9 +185,16 @@ p {
 
 .main > .companies > .container > .heading-md,
 .main > .projects > .heading-md {
-	text-align: left;
 	margin-bottom: 2.5rem;
 	font-weight: 700;
+}
+
+.main > .projects > .heading-md {
+	text-align: left;
+}
+
+.main > .companies > .container > .heading-md {
+	text-align: center;
 }
 
 .main > .companies {
