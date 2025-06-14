@@ -628,7 +628,24 @@ p {
 		opacity: 1;
 		transition: all 0.3s ease;
 		border-radius: 0;
+		/* background-image: linear-gradient(90deg, #008cff, #e100ff); */
+		background-image: none;
+		background-color: var(--primary-dark);
+		/* z-index: 1; */
+	}
+
+	.social-content::after {
+		content: "";
+		position: absolute;
+		/* top: 100px; */
+		left: 0;
+		width: 100%;
+		transform: translateY(0);
+		transition: all 0.3s ease;
+		border-radius: 0;
+		padding-bottom: 3px;
 		background-image: linear-gradient(90deg, #008cff, #e100ff);
+		z-index: -1;
 	}
 
 	.social-content ul {
@@ -638,6 +655,14 @@ p {
 
 	.social-content ul > li {
 		display: inline-block;
+	}
+
+	.social-content ul > li > a:not([data-social="youtube"]) {
+		color: var(--secondary-dark);
+	}
+
+	.social-content ul > li > a[data-social="youtube"] {
+		color: #ff0832;
 	}
 
 	.social-content ul > li:not(:last-child) {
