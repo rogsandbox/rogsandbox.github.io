@@ -30,11 +30,31 @@
 	--card-border-radius: 1rem;
 
 	/* Colors: 60-30-10 Rule */
-	--primary-dark: #ffffff;
+	--primary-dark: #f1f1f1;
 	--primary-light: #718096;
 
 	--secondary-dark: #145fef;
 	--secondary-light: #d9d9d9;
+
+	--accent-100: #cfe0ff;
+	--accent-200: #9cc0ff;
+	--accent-300: #5e8de8;
+	--accent-400: #2f69d6;
+	--accent-500: #1554cf;
+	--accent-600: #1143a6;
+	--accent-700: #082f7b;
+	--accent-800: #031f57;
+	--accent-900: #01153b;
+
+	--secondary-100: #e6e6e6;
+	--secondary-200: #bbbdc2;
+	--secondary-300: #93969d;
+	--secondary-400: #696d74;
+	--secondary-500: #4c4f57;
+	--secondary-600: #393c44;
+	--secondary-700: #292c34;
+	--secondary-800: #181b22;
+	--secondary-900: #07080b;
 
 	--tertiary-dark: #1a1a1a;
 	--tertiary-light: #6e6e6e;
@@ -512,23 +532,6 @@ p {
 	width: 6.563rem;
 	max-width: 7.5rem;
 }
-
-/* .btn-secondary::after {
-	content: "";
-	position: absolute;
-	top: -0.125rem; 
-	padding: 2px;
-	height: 100%;
-	width: 100%;
-	background-image: linear-gradient(
-		to bottom right,
-		var(--secondary-dark),
-		#e100ff
-	);
-	border-radius: 624.938rem;  
-	display: inline-block;
-	z-index: -1;
-} */
 
 .btn-secondary:hover {
 	background-color: var(--primary-dark);
