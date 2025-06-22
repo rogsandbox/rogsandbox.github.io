@@ -242,7 +242,7 @@ p {
 	position: relative;
 	margin-top: 6.5rem !important;
 	padding: 3em min(3em, 4%);
-	background-color: var(--secondary-100);
+	/* background-color: var(--secondary-100); */
 }
 
 .main > .projects {
