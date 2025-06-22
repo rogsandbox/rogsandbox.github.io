@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
 	/* Units */
@@ -28,6 +29,9 @@
 	--subtext-line-height: 1.35;
 
 	--card-border-radius: 1rem;
+
+	--roboto-font: Roboto;
+	--raleway-font: Raleway;
 
 	/* Colors: 60-30-10 Rule */
 	--primary-dark: #f1f1f1;
@@ -195,11 +199,13 @@ p {
 
 .hero > .inner > .content > .left > .heading-lg {
 	margin-top: 0.5rem;
+	line-height: 1;
 }
 
 .hero > .inner > .content > .left > .subtext-lg {
 	margin-top: 0.75rem;
 	max-width: 38.125rem;
+	line-height: 1.3;
 }
 
 .hero .cta-container {
@@ -233,9 +239,9 @@ p {
 }
 
 .main > .companies {
+	position: relative;
 	margin-top: 6.5rem !important;
 	padding: 3em min(3em, 4%);
-	/* background-color: rgba(0, 41, 255, 0.15); */
 	background-color: var(--secondary-100);
 }
 
@@ -254,9 +260,9 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/* background-color: rgba(0, 41, 255, 0.15); */
-	box-shadow: 0px 0px 10px var(--secondary-100);
-	border-radius: 0.3rem;
+	background-color: var(--secondary-100);
+	/* box-shadow: 0px 0px 10px var(--secondary-100); */
+	/* border-radius: 0.3rem; */
 	gap: 1rem;
 	padding: min(2em, 8%);
 	text-align: center;
@@ -293,7 +299,7 @@ p {
 }
 
 .projects > .inner {
-	gap: max(1.5rem, 3rem);
+	gap: 1rem;
 }
 
 .projects .tooltip-text {
@@ -376,20 +382,6 @@ p {
 	height: 100%;
 }
 
-.projects .card:not(.row-reverse) .card-thumbnail,
-.projects .card.row-reverse .card-text {
-	overflow: visible;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-}
-
-.projects .card.row-reverse .card-thumbnail,
-.projects .card:not(.row-reverse) .card-text {
-	overflow: visible;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-}
-
 .projects .card-thumbnail-backdrop {
 	position: absolute;
 	top: 0;
@@ -407,7 +399,8 @@ p {
 	width: 100%;
 	height: 100%;
 	position: relative;
-	box-shadow: 0px 0px 10px var(--secondary-100);
+	/* box-shadow: 0px 0px 10px var(--secondary-100); */
+	background-color: var(--secondary-100);
 }
 
 .projects .card-text-wrapper {
@@ -568,8 +561,8 @@ p {
 
 .emphasize-text {
 	font-weight: bold;
-	color: var(--secondary-300);
-	text-shadow: 2px 2px 2px var(--secondary-100);
+	color: var(--secondary-500);
+	text-shadow: var(--secondary-200) 2px 2px 1px;
 }
 
 .heading-lg {
@@ -719,7 +712,7 @@ p {
 	}
 
 	.hero {
-		background-image: url("/images/hero-background-image-desktop.png");
+		background-image: url("/images/hero-background-image-desktop.jpg");
 		background-color: #b4b5b9;
 		background-position: right center;
 		/* background-attachment: fixed; */
@@ -764,20 +757,6 @@ p {
 
 	.projects .card-text-wrapper > .metrics {
 		flex-direction: row;
-	}
-
-	.projects .card:not(.row-reverse) .card-thumbnail,
-	.projects .card.row-reverse .card-text {
-		overflow: hidden;
-		border-top-left-radius: 0.3rem;
-		border-bottom-left-radius: 0.3rem;
-	}
-
-	.projects .card.row-reverse .card-thumbnail,
-	.projects .card:not(.row-reverse) .card-text {
-		overflow: hidden;
-		border-top-right-radius: 0.3rem;
-		border-bottom-right-radius: 0.3rem;
 	}
 
 	.footer-pitch {
