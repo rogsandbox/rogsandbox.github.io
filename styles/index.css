@@ -522,12 +522,21 @@ p {
 	border-radius: 1.5rem;
 }
 
+.footer-wrapper > .copyright {
+	position: relative;
+	text-align: center;
+	padding: 1em;
+	font-size: var(--14px-in-rem);
+	color: var(--secondary-500);
+	font-weight: 500;
+	margin: 0 auto;
+}
+
 .btn {
 	text-decoration: none;
 	user-select: none;
 	cursor: pointer;
 	padding: 14px 30px 11px;
-	/* border-radius: 624.938rem; */
 	font-size: clamp(var(--text-xm), var(--16px-in-rem), var(--text-lg));
 	font-weight: 700;
 	position: relative;
@@ -645,9 +654,6 @@ p {
 
 /* Small tablets (≥ 600px) */
 @media (min-width: 37.5rem) {
-	body {
-		font-size: 17px;
-	}
 }
 
 /* Tablets (≥ 768px) */
