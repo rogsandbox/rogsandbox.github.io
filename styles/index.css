@@ -82,24 +82,6 @@ p {
 	max-width: 73.125rem; /* 1170px */
 }
 
-.hero {
-	position: relative;
-	background-image: url("/images/hero-background-image-mobile.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top right;
-	background-attachment: scroll;
-	width: 100%;
-	height: auto;
-	padding: min(1.75em, 8%) min(1em, 8%);
-	box-sizing: border-box;
-}
-
-.hero .cta-container > .subtext-xs,
-.hero .subtext-lg {
-	text-shadow: 0px 0px 2px var(--primary-light);
-}
-
 .social-wrapper {
 	height: auto;
 }
@@ -148,15 +130,27 @@ p {
 	margin-right: 0;
 }
 
+.hero {
+	position: relative;
+	background-image: url("/images/hero-background-image-mobile.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top right;
+	background-attachment: scroll;
+	width: 100%;
+	height: auto;
+	padding: min(1.75em, 8%) min(1em, 8%);
+	box-sizing: border-box;
+}
+
 .hero::after {
 	content: "";
 	position: absolute;
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	height: 1px;
-	background-color: var(--secondary-light);
-	filter: blur(4px);
+	height: 3px;
+	background-image: linear-gradient(to bottom right, #e100ff, #008cff);
 }
 
 .hero > .inner {
@@ -165,7 +159,7 @@ p {
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-	/* padding: 1.5em min(1.5em, 4%); */
+	padding: 1.5em min(1.5em, 4%);
 	height: 100%;
 }
 
@@ -175,6 +169,7 @@ p {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	height: 100%;
 	z-index: 1;
 }
 
@@ -185,6 +180,11 @@ p {
 
 .hero > .inner > .content > .right {
 	width: 70%;
+}
+
+.hero .cta-container > .subtext-xs,
+.hero .subtext-lg {
+	text-shadow: 0px 0px 2px var(--primary-light);
 }
 
 .hero > .inner > .content > .left > .pitch-experience {
@@ -235,7 +235,8 @@ p {
 .main > .companies {
 	margin-top: 6.5rem !important;
 	padding: 3em min(3em, 4%);
-	background-color: rgba(0, 41, 255, 0.15);
+	/* background-color: rgba(0, 41, 255, 0.15); */
+	background-color: var(--secondary-100);
 }
 
 .main > .projects {
@@ -253,7 +254,8 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: rgba(0, 41, 255, 0.15);
+	/* background-color: rgba(0, 41, 255, 0.15); */
+	box-shadow: 0px 0px 10px var(--secondary-100);
 	border-radius: 0.3rem;
 	gap: 1rem;
 	padding: min(2em, 8%);
@@ -405,7 +407,7 @@ p {
 	width: 100%;
 	height: 100%;
 	position: relative;
-	box-shadow: 0px 0px 5px rgba(0, 41, 255, 0.149);
+	box-shadow: 0px 0px 10px var(--secondary-100);
 }
 
 .projects .card-text-wrapper {
@@ -437,8 +439,9 @@ p {
 }
 
 .projects .card-text-wrapper > .main > ul.tech-stack > li {
-	background-color: rgba(0, 41, 255, 0.2);
-	color: var(--tertiary-light);
+	background-color: var(--secondary-600);
+	color: var(--secondary-100);
+	font-weight: 500;
 	font-size: var(--text-xm);
 	padding: 0.25rem 0.75rem;
 	border-radius: 1rem;
@@ -565,8 +568,8 @@ p {
 
 .emphasize-text {
 	font-weight: bold;
-	color: var(--primary-dark);
-	text-shadow: 2.5px 2px 3px rgba(0, 0, 0, 0.5);
+	color: var(--secondary-300);
+	text-shadow: 2px 2px 2px var(--secondary-100);
 }
 
 .heading-lg {
@@ -647,7 +650,15 @@ p {
 	opacity: 1;
 }
 
-@media screen and (min-width: 750px) {
+/* Small tablets (≥ 600px) */
+@media (min-width: 37.5rem) {
+	body {
+		font-size: 17px;
+	}
+}
+
+/* Tablets (≥ 768px) */
+@media (min-width: 48rem) {
 	.social-content {
 		position: relative;
 		top: 0;
@@ -709,10 +720,11 @@ p {
 
 	.hero {
 		background-image: url("/images/hero-background-image-desktop.png");
+		background-color: #b4b5b9;
 		background-position: right center;
-		background-attachment: fixed;
-		height: 60vh;
-		height: 60dvh;
+		/* background-attachment: fixed; */
+		/* height: 100vh;
+		height: 100dvh; */
 	}
 
 	.hero > .inner > .content {
@@ -787,8 +799,17 @@ p {
 	}
 }
 
-@media screen and (min-width: 1000px) {
+/* Laptops/desktops (≥ 1024px) */
+@media (min-width: 64rem) {
 	.hero {
-		background-position: top center;
+		/* background-position: top center; */
+		height: auto;
+	}
+}
+
+/* Large screens (≥ 1280px) */
+@media (min-width: 80rem) {
+	.hero {
+		height: 60dvh;
 	}
 }
