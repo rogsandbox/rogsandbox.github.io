@@ -193,7 +193,7 @@ p {
 
 .hero > .inner > .content > .left > .pitch-experience {
 	font-weight: 700;
-	font-size: clamp(var(--14px-in-rem, 4vw, var(--16px-in-rem)));
+	font-size: clamp(var(--14px-in-rem), 0.774rem + 0.226vw, var(--16px-in-rem));
 	color: var(--tertiary-light);
 }
 
@@ -537,7 +537,7 @@ p {
 	user-select: none;
 	cursor: pointer;
 	padding: 14px 30px 11px;
-	font-size: clamp(var(--text-xm), var(--16px-in-rem), var(--text-lg));
+	font-size: clamp(var(--text-xm), 0.8708rem + 0.2542vw, var(--text-lg));
 	font-weight: 700;
 	position: relative;
 	display: inline-block;
@@ -576,45 +576,45 @@ p {
 
 .heading-lg {
 	font-weight: normal;
-	font-size: clamp(var(--text-h2), calc(4vw + 1rem), var(--text-display-2));
+	font-size: clamp(var(--text-h2), 2.322rem + 0.678vw, var(--text-display-2));
 	color: var(--tertiary-dark);
 }
 
 .heading-md {
 	font-weight: normal;
-	font-size: clamp(var(--text-lg), calc(3vw + 1rem), var(--text-h3));
+	font-size: clamp(var(--text-lg), 1.161rem + 0.339vw, var(--text-h3));
 	color: var(--tertiary-dark);
 }
 
 .heading-sm {
 	font-weight: normal;
-	font-size: clamp(var(--text-base), calc(2vw + 1rem), var(--text-h4));
+	font-size: clamp(var(--text-base), 0.9675rem + 0.2825vw, var(--text-h4));
 	color: var(--tertiary-dark);
 }
 
 .subtext-lg {
-	font-size: clamp(var(--text-base), calc(4vw + 1rem), var(--text-h4));
+	font-size: clamp(var(--text-base), 0.9675rem + 0.2825vw, var(--text-h4));
 	font-weight: normal;
 	line-height: 1.5;
 	color: var(--tertiary-light);
 }
 
 .subtext-md {
-	font-size: clamp(var(--text-lg), calc(3vw + 1rem), var(--text-base));
+	font-size: clamp(var(--text-base), 0.8708rem + 0.2542vw, var(--text-lg));
 	font-weight: normal;
 	line-height: 1.5;
 	color: var(--tertiary-light);
 }
 
 .subtext-sm {
-	font-size: clamp(var(--text-sm), calc(2vw + 1rem), var(--text-lg));
+	font-size: clamp(var(--text-sm), 0.8708rem + 0.2542vw, var(--text-lg));
 	font-weight: normal;
 	line-height: 1.5;
 	color: var(--tertiary-light);
 }
 
 .subtext-xs {
-	font-size: clamp(var(--text-xm), calc(1vw + 1rem), var(--text-sm));
+	font-size: clamp(var(--text-xm), 0.6773rem + 0.1977vw, var(--text-sm));
 	font-weight: normal;
 	line-height: 1.5;
 	color: var(--tertiary-light);
