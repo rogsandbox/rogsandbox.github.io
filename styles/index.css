@@ -280,13 +280,13 @@ p {
 
 .main > .companies {
 	position: relative;
-	margin-top: 6.5rem !important;
-	padding: 3em min(3em, 4%);
-	/* background-color: var(--secondary-100); */
+	margin-top: var(--space-144) !important;
+	padding: var(--space-40) min(var(--space-16), 4%);
+	background-color: var(--secondary-100);
 }
 
 .main > .projects {
-	margin-top: 6.5rem !important;
+	margin-top: var(--space-144) !important;
 }
 
 .features.w-full > .inner {
@@ -514,8 +514,8 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	margin: 0 auto;
-	padding: 6.6rem min(1.5em, 4%);
+	margin: var(--space-144) auto;
+	padding: 0 var(--space-16);
 	gap: var(--space-40);
 	position: relative;
 }
