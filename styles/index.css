@@ -227,12 +227,12 @@ p {
 }
 
 .hero > .inner > .content > .left > .heading-lg {
-	margin-top: 0.75rem;
+	margin-top: 1.5rem;
 	line-height: 1;
 }
 
 .hero > .inner > .content > .left > .subtext-lg {
-	margin-top: 0.75rem;
+	margin-top: 1.5rem;
 	max-width: 38.125rem;
 	line-height: 1.3;
 }
@@ -673,6 +673,11 @@ p {
 @media (min-width: 37.5rem) {
 	.hero > .inner > .content > .right {
 		opacity: 0;
+	}
+
+	.hero > .inner > .content > .left > .heading-lg,
+	.hero > .inner > .content > .left > .subtext-lg {
+		margin-top: 0.75rem;
 	}
 }
 
