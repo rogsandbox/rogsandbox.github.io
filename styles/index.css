@@ -136,14 +136,14 @@ p {
 
 .hero {
 	position: relative;
-	background-image: url("/images/hero-background-image-desktop.jpg");
+	background-image: none;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top right;
 	background-attachment: scroll;
 	width: 100%;
 	height: auto;
-	padding: min(4.75em, 50%) min(1.5em, 4%);
+	padding: min(1.5em, 50%) min(1.5em, 4%);
 	box-sizing: border-box;
 }
 
@@ -153,8 +153,8 @@ p {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	height: 3px;
-	background-image: linear-gradient(to bottom right, #e100ff, #008cff);
+	height: 0.188rem;
+	background-image: none;
 }
 
 .hero > .inner {
@@ -170,20 +170,49 @@ p {
 	display: flex;
 	flex-direction: column-reverse;
 	justify-content: flex-end;
-	align-items: center;
+	align-items: flex-start;
 	width: 100%;
 	height: 100%;
-	z-index: 1;
 }
 
 .hero > .inner > .content > .left {
-	width: 130%;
+	width: 135%;
 	max-width: 100%;
 }
 
 .hero > .inner > .content > .right {
-	width: 80%;
+	width: 75%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 	height: 10dvh;
+	gap: 0.35rem;
+	opacity: 1;
+}
+
+.hero > .inner > .content > .right > * {
+	height: 1.875rem;
+	width: 1.875rem;
+}
+
+.hero > .inner > .content .left .hero-top-proof {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	gap: 0.5rem;
+}
+
+.hero > .inner > .content .left .hero-top-proof > .stars {
+	display: none;
+	flex-direction: row;
+	gap: 0.2rem;
+}
+
+.hero > .inner > .content .left .hero-top-proof > .stars > * {
+	width: 0.938rem;
+	height: 0.938rem;
 }
 
 .hero .cta-container > .subtext-xs,
@@ -217,7 +246,7 @@ p {
 }
 
 .hero .cta-container .subtext-xs {
-	max-width: 180px;
+	max-width: 11.25rem;
 }
 
 .main {
@@ -261,7 +290,7 @@ p {
 	gap: 1rem;
 	padding: min(2em, 8%);
 	text-align: center;
-	min-height: 150px;
+	min-height: 9.375rem;
 }
 
 .features.w-full > .inner > .card > .content .heading-sm {
@@ -323,7 +352,7 @@ p {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	min-height: 250px;
+	min-height: 15.625rem;
 
 	display: flex;
 	flex-direction: column;
@@ -356,7 +385,7 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 0 30px;
+	padding: 0 1.875rem;
 	text-align: center;
 }
 
@@ -482,7 +511,7 @@ p {
 }
 
 .footer-pitch > .avatar {
-	max-width: 300px;
+	max-width: 18.75rem;
 }
 
 .footer-pitch > .description {
@@ -501,8 +530,8 @@ p {
 }
 
 .footer-pitch > .avatar img {
-	width: 120px;
-	height: 120px;
+	width: 7.5rem;
+	height: 7.5rem;
 	object-fit: cover;
 	border-radius: 1.5rem;
 }
@@ -521,8 +550,8 @@ p {
 	text-decoration: none;
 	user-select: none;
 	cursor: pointer;
-	padding: 14px 30px 11px;
-	font-size: clamp(var(--text-xm), 0.8708rem + 0.2542vw, var(--text-lg));
+	padding: 0.875rem 1.875rem 0.688rem;
+	font-size: clamp(var(--text-sm), 0.774rem + 0.226vw, var(--text-base));
 	font-weight: 700;
 	position: relative;
 	display: inline-block;
@@ -642,6 +671,9 @@ p {
 
 /* Small tablets (≥ 600px) */
 @media (min-width: 37.5rem) {
+	.hero > .inner > .content > .right {
+		opacity: 0;
+	}
 }
 
 /* Tablets (≥ 768px) */
@@ -709,13 +741,20 @@ p {
 		background-image: url("/images/hero-background-image-desktop.jpg");
 		background-color: #b4b5b9;
 		background-position: right center;
-		/* background-attachment: fixed; */
-		/* height: 100vh;
-		height: 100dvh; */
+		padding: min(4.5em, 50%) min(1.5em, 4%);
+	}
+
+	.hero::after {
+		background-image: linear-gradient(to bottom right, #e100ff, #008cff);
 	}
 
 	.hero > .inner > .content {
 		flex-direction: row;
+		align-items: center;
+	}
+
+	.hero > .inner > .content .left .hero-top-proof > .stars {
+		display: flex;
 	}
 
 	.hero .cta-container > .subtext-xs,
