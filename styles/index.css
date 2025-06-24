@@ -184,7 +184,7 @@ p {
 	width: 75%;
 	display: flex;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: flex-end;
 	height: 10dvh;
 	gap: 0.35rem;
 	opacity: 1;
@@ -196,7 +196,7 @@ p {
 }
 
 .hero > .inner > .content .left .hero-top-proof {
-	display: flex;
+	display: none;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
@@ -205,7 +205,7 @@ p {
 }
 
 .hero > .inner > .content .left .hero-top-proof > .stars {
-	display: none;
+	display: flex;
 	flex-direction: row;
 	gap: 0.2rem;
 }
@@ -220,14 +220,14 @@ p {
 	text-shadow: 0px 0px 2px var(--primary-light);
 }
 
-.hero > .inner > .content > .left > .pitch-experience {
+.hero > .inner > .content > .left > .hero-top-proof > .pitch-experience {
 	font-weight: 700;
 	font-size: clamp(var(--14px-in-rem), 0.774rem + 0.226vw, var(--16px-in-rem));
 	color: var(--tertiary-light);
 }
 
 .hero > .inner > .content > .left > .heading-lg {
-	margin-top: 0.5rem;
+	margin-top: 0.75rem;
 	line-height: 1;
 }
 
@@ -753,7 +753,7 @@ p {
 		align-items: center;
 	}
 
-	.hero > .inner > .content .left .hero-top-proof > .stars {
+	.hero > .inner > .content .left .hero-top-proof {
 		display: flex;
 	}
 
