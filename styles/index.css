@@ -62,6 +62,28 @@
 
 	--tertiary-dark: #1a1a1a;
 	--tertiary-light: #6e6e6e;
+
+	/* Spacing */
+	--space-4: 0.25rem;
+	--space-8: 0.5rem;
+	--space-12: 0.75rem;
+	--space-16: 1rem;
+	--space-20: 1.25rem;
+	--space-24: 1.5rem;
+	--space-32: 2rem;
+	--space-40: 2.5rem;
+	--space-48: 3rem;
+	--space-56: 3.5rem;
+	--space-64: 4rem;
+	--space-72: 4.5rem;
+	--space-80: 5rem;
+	--space-96: 6rem;
+	--space-104: 6.5rem;
+	--space-112: 7rem;
+	--space-120: 7.5rem;
+	--space-128: 8rem;
+	--space-136: 8.5rem;
+	--space-144: 9rem;
 }
 
 html,
@@ -201,13 +223,13 @@ p {
 	justify-content: flex-start;
 	align-items: center;
 	width: 100%;
-	gap: 0.5rem;
+	gap: var(--space-8);
 }
 
 .hero > .inner > .content .left .hero-top-proof > .stars {
 	display: flex;
 	flex-direction: row;
-	gap: 0.2rem;
+	gap: var(--space-4);
 }
 
 .hero > .inner > .content .left .hero-top-proof > .stars > * {
@@ -222,11 +244,11 @@ p {
 }
 
 .hero > .inner > .content > .left > .heading-lg {
-	margin-top: 1.25rem;
+	margin-top: var(--space-20);
 }
 
 .hero > .inner > .content > .left > .subtext-md {
-	margin-top: 1.25rem;
+	margin-top: var(--space-20);
 	max-width: 38.125rem;
 }
 
@@ -234,8 +256,8 @@ p {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	gap: 1rem;
-	margin-top: 1.5rem;
+	gap: var(--space-20);
+	margin-top: var(--space-40);
 }
 
 .hero .cta-container .subtext-sm {
@@ -248,7 +270,7 @@ p {
 
 .main > .companies > .container > .heading-md,
 .main > .projects > .heading-md {
-	margin-bottom: 2.5rem;
+	margin-bottom: var(--space-40);
 	font-weight: 700;
 }
 
@@ -270,7 +292,7 @@ p {
 .features.w-full > .inner {
 	display: grid;
 	grid-template-columns: repeat(1fr, 1fr);
-	gap: 2.5rem;
+	gap: var(--space-40);
 }
 
 .features.w-full > .inner > .card > .content {
@@ -280,7 +302,7 @@ p {
 	align-items: center;
 	background-color: var(--secondary-100);
 	box-shadow: 1px 1px 2px var(--secondary-200);
-	gap: 1rem;
+	gap: var(--space-16);
 	padding: min(2em, 8%);
 	text-align: center;
 	min-height: 9.375rem;
@@ -308,15 +330,11 @@ p {
 .projects > .inner {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
-	gap: 2.5rem;
+	gap: var(--space-40);
 }
 
 .companies > .container > .inner {
-	gap: 2.5rem;
-}
-
-.projects > .inner {
-	gap: 1rem;
+	gap: var(--space-40);
 }
 
 .projects .tooltip-text {
@@ -423,12 +441,11 @@ p {
 .projects .card-text-wrapper {
 	display: flex;
 	flex-direction: column;
-	/* width: 100%; */
 	height: 100%;
-	padding: min(1.5em, 5%);
+	padding: min(var(--space-32), 5%);
 	box-sizing: border-box;
 	justify-content: space-between;
-	gap: 1rem;
+	gap: var(--space-32);
 }
 
 .projects .card-text-wrapper > .main {
@@ -460,21 +477,21 @@ p {
 }
 
 .projects .card-text-wrapper > .main > .heading-sm {
-	margin-top: 0.75rem;
+	margin-top: var(--space-32);
 	font-weight: 700;
 }
 
 .projects .card-text-wrapper > .main > .subtext-sm {
-	margin-top: 0.75rem;
+	margin-top: var(--space-16);
 }
 
 .projects .card-text-wrapper > .metrics {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	height: 100%;
-	gap: 1rem;
+	gap: var(--space-32);
 }
 
 .projects .card-text-wrapper > .metrics > div {
@@ -483,7 +500,7 @@ p {
 
 .projects .card-text-wrapper > .metrics .heading-sm {
 	font-weight: 700;
-	margin-bottom: 0.5rem;
+	margin-bottom: var(--space-16);
 }
 
 .footer-wrapper {
@@ -499,7 +516,7 @@ p {
 	align-items: flex-start;
 	margin: 0 auto;
 	padding: 6.6rem min(1.5em, 4%);
-	gap: 1.5rem;
+	gap: var(--space-40);
 	position: relative;
 }
 
@@ -515,7 +532,7 @@ p {
 	justify-content: space-between;
 	align-items: flex-start;
 	margin: auto 0;
-	gap: 1.5rem;
+	gap: var(--space-40);
 }
 
 .footer-pitch > .description > p:last-of-type {
@@ -532,7 +549,7 @@ p {
 .footer-wrapper > .copyright {
 	position: relative;
 	text-align: center;
-	padding: 1.5em 1em;
+	padding: var(--space-24) var(--space-16);
 	margin: 0 auto;
 }
 
@@ -761,12 +778,12 @@ p {
 	}
 
 	.companies > .container > .inner {
-		gap: 1rem;
+		gap: var(--space-16);
 	}
 
 	.projects .card {
 		flex-direction: row;
-		gap: 1rem;
+		gap: var(--space-40);
 		min-height: 18.75rem;
 	}
 
