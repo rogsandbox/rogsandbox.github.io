@@ -598,7 +598,7 @@ p {
 .heading-lg {
 	font-weight: normal;
 	font-size: clamp(var(--text-h2), 2.322rem + 0.678vw, var(--text-display-2));
-	line-height: calc(1.75 / 1.89);
+	line-height: calc(2 / 1.89);
 	color: var(--secondary-600);
 	letter-spacing: -0.045em;
 }
@@ -606,7 +606,7 @@ p {
 .heading-md {
 	font-weight: normal;
 	font-size: clamp(var(--text-h4), 1.1703rem + 0.3417vw, var(--text-h3));
-	line-height: calc(1.5 / 1.26);
+	line-height: calc(1.75 / 1.26);
 	color: var(--secondary-600);
 	letter-spacing: -0.025em;
 }
@@ -614,7 +614,7 @@ p {
 .heading-sm {
 	font-weight: normal;
 	font-size: clamp(var(--text-lg), 0.9753rem + 0.2847vw, var(--text-h4));
-	line-height: calc(1.25 / 1.134);
+	line-height: calc(1.5 / 1.134);
 	color: var(--secondary-600);
 	letter-spacing: -0.025em;
 }
