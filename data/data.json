@@ -1,0 +1,404 @@
+{
+	"data": [
+		{
+			"question": "What is the main benefit of using the mobile app within the launch pad?",
+			"answers": ["Consolidation of communication channels"]
+		},
+		{
+			"question": "What is the purpose of the GMB integration in the Launch Pad?",
+			"answers": [
+				"To capture phone numbers and recordings generated from a google Listing",
+				"To instantly engage with customer inquiries using Google search (on mobile)",
+				"To generate and provide exposure to customer reviews"
+			]
+		},
+		{
+			"question": "What is the purpose of the Stripe connection in the Launch Pad?",
+			"answers": [
+				"To integrate a payment processor for use with invoices, payment links, websites, funnels, and products."
+			]
+		},
+		{
+			"question": "When would you use a number pool? (Multiple Choice - Select ALL that apply)",
+			"answers": [
+				"To identify the best-performing channels",
+				"To track phone numbers across different campaigns"
+			]
+		},
+		{
+			"question": "Where can you access the phone numbers section in the app?",
+			"answers": ["In the sub-account settings"]
+		},
+		{
+			"question": "What is the purpose of integrating a phone provider within the agency settings?",
+			"answers": [
+				"To allow sub-accounts users to easily purchase and utilize all the phone features within the CRM (SMS, Calling, Recording, & Voicemail drops)"
+			]
+		},
+		{
+			"question": "What is the benefit of using the missed call text back feature?",
+			"answers": [
+				"It automatically sends a custom or default text message to missed callers."
+			]
+		},
+		{
+			"question": "Where can you access the system's missed call text back feature?",
+			"answers": ["Business profile settings"]
+		},
+		{
+			"question": "Is a phone provider necessary to test the missed call text back feature?",
+			"answers": [
+				"Yes, a phone provider needs to be set up for proper testing."
+			]
+		},
+		{
+			"question": "What is the biggest advantage of using High Level's web-chat widgets over traditional ones?",
+			"answers": ["It allows for two-way conversations through SMS."]
+		},
+		{
+			"question": "Why is SMS considered beneficial for web chat engagement?",
+			"answers": ["It ensures higher response rates."]
+		},
+		{
+			"question": "How can the chat widget be added to specific pages within a funnel or website?",
+			"answers": [
+				"By individually editing each page's settings and adding the widget's code."
+			]
+		},
+		{
+			"question": "Which tab should you navigate to create a workflow for the web chat widget?",
+			"answers": ["Automations"]
+		},
+		{
+			"question": "What trigger should you select for the workflow for web chat widget?",
+			"answers": ["Customer replied"]
+		},
+		{
+			"question": "What information can be passed on to the user in the notification?",
+			"answers": ["Name", "Mobile Number", "Message", "Email"]
+		},
+		{
+			"question": "What 'action' in the workflow allows you to send an information to a user?",
+			"answers": ["Internal Notification"]
+		},
+		{
+			"question": "When using the internal notification, which pages can be specified for the redirect when a user clicks on a the app notification?",
+			"answers": ["Contact record", "Conversations view", "Opportunity Page"]
+		},
+		{
+			"question": "How can you access additional payment gateways like NMI and authorized.net?",
+			"answers": [
+				"Within the Payments section and Integrations tab located in the sub-account settings"
+			]
+		},
+		{
+			"question": "Which integration allows you to enable Google & Apple Pay?",
+			"answers": ["Stripe Connect"]
+		},
+		{
+			"question": "What does the Google account integration in the settings allow you to do?",
+			"answers": [
+				"Access Google Analytics, Google My Business data, and calendar sync integration"
+			]
+		},
+		{
+			"question": "What is the purpose of the QuickBooks integration?",
+			"answers": ["To send review links to paid invoices"]
+		},
+		{
+			"question": "Where can you submit ideas for platform and integration improvements?",
+			"answers": ["At ideas.gohighlevel.com"]
+		},
+		{
+			"question": "What are the two types of audit logs mentioned in the video?",
+			"answers": ["Agency audit logs and Sub-account audit logs"]
+		},
+		{
+			"question": "Where can you find the audit logs in the system?",
+			"answers": ["Within the Sub-Account Settings"]
+		},
+		{
+			"question": "How far back in time can you view the audit logs?",
+			"answers": ["Up to 60 days"]
+		},
+		{
+			"question": "Is it possible to restore deleted items using the audit logs?",
+			"answers": ["Yes, it depends on the action and its limitations."]
+		},
+		{
+			"question": "Where can you access the template library in the app?",
+			"answers": ["Blogs", "Website Builder", "Email Builder", "Social Planner"]
+		},
+		{
+			"question": "How can the template library be enabled for sub accounts?",
+			"answers": ["It can be enabled in the Agency Settings."]
+		},
+		{
+			"question": "What difference is there between an agency user and a sub account user when importing a template?",
+			"answers": [
+				"The agency user sees a GoHighLevel warning notice while the sub account user sees the agency's name."
+			]
+		},
+		{
+			"question": "How can you check if a user is a sub account user?",
+			"answers": [
+				"Check the user's profile in the app within the settings > staff tab"
+			]
+		},
+		{
+			"question": "What is the difference between a custom value and a custom field?",
+			"answers": [
+				"Custom values are global fields, while custom fields are contact dependent."
+			]
+		},
+		{
+			"question": "Can custom values be different for each contact or lead?",
+			"answers": ["No, custom values are the same for all contacts and leads."]
+		},
+		{
+			"question": "How can custom values be utilized in marketing campaigns?",
+			"answers": [
+				"To dynamically insert standardized information across campaign assets/ collateral."
+			]
+		},
+		{
+			"question": "What does the 'Enable Email Signatures' option allow users to do?",
+			"answers": [
+				"Append an email signature to all outgoing messages",
+				"Include the signature before quoted text in replies",
+				"Add an image to the email signature"
+			]
+		},
+		{
+			"question": "Where can you enable/disable the visibility of the Dashboard Stats for the user?",
+			"answers": ["User permissions"]
+		},
+		{
+			"question": "Which role has the permission to create new sub-accounts?",
+			"answers": ["Admin"]
+		},
+		{
+			"question": "When would you typically need to reassign leads from one user to another?",
+			"answers": ["When a user departs from the sub-account"]
+		},
+		{
+			"question": "What is the primary purpose of creating a workflow to move leads?",
+			"answers": [
+				"To facilitate bulk lead assignment between users and ensure that no leads fall through the cracks."
+			]
+		},
+		{
+			"question": "What must be done before removing a user from the sub-account?",
+			"answers": ["Reassign the leads from that user to another user"]
+		},
+		{
+			"question": "What is the purpose of marking messages as 'unread'? (Via workflows or manually)",
+			"answers": ["To highlight important messages"]
+		},
+		{
+			"question": "How can contacts be marked as 'starred'?",
+			"answers": ["By clicking the star icon in the conversation thread"]
+		},
+		{
+			"question": "What caution is given about deleting conversation threads?",
+			"answers": ["Deleted threads cannot be recovered"]
+		},
+		{
+			"question": "What feature allows users to access detailed contact information from the Conversations tab?",
+			"answers": ["Clicking on the contact's name or card"]
+		},
+		{
+			"question": "What is the main purpose of using SMS and email templates in the system?",
+			"answers": [
+				"To ensure consistent messaging from user across interactions"
+			]
+		},
+		{
+			"question": "What is the purpose of adding custom values to templates?",
+			"answers": [
+				"To efficiently update message information across the system where the template is utilized."
+			]
+		},
+		{
+			"question": "When sending SMS messages, what happens if the character count exceeds a certain threshold?",
+			"answers": [
+				"The message will be sent in multiple segments (separate messages)"
+			]
+		},
+		{
+			"question": "To bring in human touch points when necessary",
+			"answers": [
+				"To bring in human touch points when necessary",
+				"Time-sensitive tasks",
+				"Approval processes"
+			]
+		},
+		{
+			"question": "Which of the following is NOT a requirement for manual call and SMS actions to work?",
+			"answers": ["Being on a specific subscription plan"]
+		},
+		{
+			"question": "How can you handle different outcomes from manual call actions?",
+			"answers": [
+				"Use branching to create separate actions for different outcomes"
+			]
+		},
+		{
+			"question": "Which parameter determines how soon an appointment can be scheduled?",
+			"answers": ["Minimum scheduling notice"]
+		},
+		{
+			"question": "What is the benefit of assigning leads to specific agents in a round-robin calendar?",
+			"answers": [
+				"It avoids duplicate bookings.",
+				"It automatically distributes leads based on the calendar settings.",
+				"It ensures that leads get the time they want or allows them to select the staff member of their choice."
+			]
+		},
+		{
+			"question": "What are the two types of scheduling/share links that are provided for a calendar? (3 Dot dropdown options)",
+			"answers": ["Permanent and Scheduling link"]
+		},
+		{
+			"question": "What is the primary purpose of assigning a specific calendar link to a user?",
+			"answers": [
+				"To ensure that the lead receives a link to the user's calendar to whom they are assigned."
+			]
+		},
+		{
+			"question": "How can a sales agent's/ Users calendar link be included in a outbound message?",
+			"answers": ["By adding in the message body"]
+		},
+		{
+			"question": "What should be considered when using automation to send user-specific calendar links?",
+			"answers": ["Leads must be assigned to the correct sales agent (user)"]
+		},
+		{
+			"question": "What happens if a lead is not properly assigned to a sales agent (user) when using automation with user-specific calendar links?",
+			"answers": [
+				"The lead will not receive any calendar link. The message body where the link is will be blank."
+			]
+		},
+		{
+			"question": "What is the primary purpose of setting up triggers for different calendar types?",
+			"answers": [
+				"To automate messaging and appointment-related actions, by ensuring that the trigger only fires when it should."
+			]
+		},
+		{
+			"question": "What is the significance of specifying 'recurring event type' as a trigger filter within a workflow?",
+			"answers": [
+				"It ensures the trigger is fired only for recurring appointments"
+			]
+		},
+		{
+			"question": "What is the essential requirement for the 'confirmed' appointment status trigger?",
+			"answers": [
+				"It ensures the system looks for a specific 'status' in the appointment trigger"
+			]
+		},
+		{
+			"question": "How can 'non-confirmed' appointments statuses trigger/fire a workflow?",
+			"answers": [
+				"By using the 'new' status filter for the 'appointment status trigger.'"
+			]
+		},
+		{
+			"question": "What is the purpose of the 'Calendars and Appointments' tab?",
+			"answers": [
+				"To provide a way to see each users calenders and appointments",
+				"To show a daily, weekly or monthly overview of appointments and calendars",
+				"To display daily appointments only",
+				"To highlight past appointments"
+			]
+		},
+		{
+			"question": "How can you integrate your calendar into the system?",
+			"answers": ["By connecting your Google and or Outlook calendar"]
+		},
+		{
+			"question": "What does an appointment marked as 'unconfirmed' mean?",
+			"answers": ["It requires manual confirmation by the user"]
+		},
+		{
+			"question": "What is one of the prerequisites mentioned for using appointment booking features?",
+			"answers": ["Creating a calendar widget and workflows for reminders"]
+		},
+		{
+			"question": "How can users book an appointment on behalf of a contact from within a conversation?",
+			"answers": [
+				"By clicking the 'Book Appointment' button in the conversation preview or within the appointment tab"
+			]
+		},
+		{
+			"question": "How can appointment status triggers be utilized in automation workflows?",
+			"answers": [
+				"To initiate follow-up actions based on appointment status changes"
+			]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		}
+	]
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>GHL Quiz</title>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+			* {
+				box-sizing: border-box;
+				font-family: Poppins;
+			}
+
+			body,
+			html {
+				margin: 0;
+				padding: 0;
+			}
+
+			#app {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				width: 100%;
+				margin: 0 auto;
+				padding: 1rem;
+			}
+
+			.search-form,
+			.article {
+				width: 100%;
+			}
+
+			.search-form input[name="search"] {
+				width: 100%;
+				font-size: 1rem;
+				padding: 1rem 1.25rem;
+				border: 1px solid #656565;
+			}
+
+			.search-form input[name="search"]:focus {
+				outline: none;
+			}
+
+			ul.article__section_list {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			ul.article__section_list > .article__section_list_item {
+				font-weight: 600;
+				font-size: clamp(0.875rem, 0.774rem + 0.226vw, 1rem);
+				background-color: #f1f1f1;
+				padding: 1rem;
+				margin-top: 0.75rem;
+				color: #292929;
+				box-shadow: 0px 0px 1px #656565;
+			}
+
+			.article__section_list_item > ul {
+				margin: 0.85rem 0 0 0;
+				padding-left: 1.75rem;
+			}
+
+			.article__section_list_item > ul > li {
+				font-weight: normal;
+				font-size: clamp(0.75rem, 0.6773rem + 0.1977vw, 0.875rem);
+				color: #656565;
+			}
+
+			.article__section_list_item > ul > li:not(:last-of-type) {
+				margin-bottom: 0.5rem;
+			}
+
+			@media screen and (min-width: 750px) {
+				#app {
+					width: 50%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<section class="search-form">
+				<form onsubmit="e => e.target.preventDefault();">
+					<div class="search__wrapper">
+						<input
+							type="text"
+							name="search"
+							autocomplete="off"
+							placeholder="Search Questions"
+						/>
+					</div>
+				</form>
+			</section>
+			<section class="article">
+				<ul class="article__section_list"></ul>
+			</section>
+		</div>
+
+		<script defer>
+			document.addEventListener("DOMContentLoaded", async (e) => {
+				const FILE_PATH = "./data/data.json";
+				const { data: articles } = await getArticles(FILE_PATH);
+
+				const input = document.querySelector(
+					'.search__wrapper > input[type="text"]'
+				);
+				const articleList = document.querySelector(".article__section_list");
+
+				const handleKeydown = debounce((e) => {
+					const el = e.target;
+					const search = el.value.trim().toLowerCase();
+
+					if (!search) {
+						return;
+					}
+
+					const filteredQuestions = articles.filter(({ question }) =>
+						question.toLowerCase().includes(search)
+					);
+
+					// remove all list
+					removeNodes(articleList.childNodes);
+
+					if (filteredQuestions.length <= 0) {
+						const list = document.createElement("li");
+						list.textContent = "No article found";
+						articleList.insertAdjacentElement("afterbegin", list);
+						return;
+					}
+
+					filteredQuestions.forEach((fq) => {
+						const list = document.createElement("li");
+						const ul = document.createElement("ul");
+						list.classList.add("article__section_list_item");
+						list.textContent = `${fq.question}: `;
+
+						fq.answers.forEach((answer) => {
+							const li = document.createElement("li");
+							li.textContent = answer;
+							ul.appendChild(li);
+						});
+
+						list.appendChild(ul);
+
+						articleList.insertAdjacentElement("afterbegin", list);
+					});
+				});
+
+				input.addEventListener("keydown", handleKeydown);
+
+				function debounce(closure, timeout = 500) {
+					let timer;
+
+					return function (...args) {
+						clearTimeout(timer);
+
+						timer = setTimeout(() => {
+							return closure.apply(this, args);
+						}, timeout);
+					};
+				}
+
+				async function getArticles(file) {
+					const res = await fetch(FILE_PATH);
+
+					return await res.json();
+				}
+
+				function removeNodes(nodes) {
+					while (nodes.length !== 0) {
+						const child = nodes[0];
+						child.parentNode.removeChild(child);
+					}
+				}
+			});
+		</script>
+	</body>
+</html>
