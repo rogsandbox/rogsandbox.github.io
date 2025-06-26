@@ -461,16 +461,18 @@
 			"answers": ["To store specific information about contacts"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of creating and managing tasks within the system?",
+			"answers": ["To remind individuals to complete specific actions."]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Which of the following statements about task assignment is correct?",
+			"answers": [
+				"Tasks can be assigned to users, regardless of their connection to contacts."
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of using internal notifications for task reminders?",
+			"answers": ["To remind users about upcoming tasks."]
 		},
 		{
 			"question": "",

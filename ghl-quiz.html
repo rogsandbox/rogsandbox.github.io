@@ -188,8 +188,9 @@
 				input.addEventListener("keydown", handleKeydown);
 
 				clearSearch.addEventListener("click", function (e) {
-					input.value = "";
 					this.classList.remove("active");
+					input.value = "";
+					input.focus();
 				});
 
 				function debounce(closure, timeout = 500) {
