@@ -475,76 +475,86 @@
 			"answers": ["To remind users about upcoming tasks."]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of the restore option in the contacts?",
+			"answers": ["To recover accidentally deleted contacts in bulk"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is restored when you perform a bulk restore of contacts?",
+			"answers": [
+				"Conversation, Notes, Opportunities, Tasks, Appointments, Manual Actions."
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "How can you initiate the restoration of contacts individually from the 'Audit Logs'?",
+			"answers": [
+				"By selecting the 'Force Restore' option for the contact in the 'Audit Logs'"
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of custom fields in contact records?",
+			"answers": ["To create unique questions and data fields per contact"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "How can custom fields be organized for easier access?",
+			"answers": ["By utilizing custom folders to group related fields."]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What advantage does organizing custom fields into folders offer?",
+			"answers": ["Better categorization and prioritization of information"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What are bulk actions used for within the platform's contact tab?",
+			"answers": ["Handling operations on a larger scale"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What types of bulk actions can be performed in the CRM?",
+			"answers": ["Adding tags", "Sending emails", "Importing contacts"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "In the context of bulk email campaigns, which factors can affect the data being returned to the CRM from bulk action(s)?",
+			"answers": ["The SMTP provider used for sending emails"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "How can users hide specific pipeline stages from the dashboard view?",
+			"answers": [
+				"By toggling the visibility settings located within the pipeline builder"
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What does marking an opportunity as 'Won' typically indicate?",
+			"answers": [
+				"The opportunity has been successfully 'Won' and moved out of the open stage."
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the benefit of attributing a lead's value within the pipeline?",
+			"answers": [
+				"It visibly displays the dollar denomination of the lead for the opportunity."
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of automating opportunities within pipelines?",
+			"answers": ["To streamline and standardize opportunity management"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Which automation trigger is suitable for moving contacts between stages?",
+			"answers": ["Pipeline stage changed"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What does the 'Opportunity Status' action allow users to do?",
+			"answers": ["Update the status of an opportunity"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the primary purpose of creating invoices in the system?",
+			"answers": ["To keep track of expenses and get paid for services"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Which section of the system should you navigate to in order to create invoices?",
+			"answers": ["Payments"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "How can you apply a discount to an invoice?",
+			"answers": ["Manually add it after adding a product to the invoice"]
 		},
 		{
 			"question": "",
