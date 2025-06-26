@@ -337,6 +337,246 @@
 			]
 		},
 		{
+			"question": "How can you change the starting day of the week on your calendar?",
+			"answers": ["Through account calendar preferences"]
+		},
+		{
+			"question": "Which meeting link option may not show up if it hasn't been integrated with the user's profile?",
+			"answers": ["Zoom & Google Meet"]
+		},
+		{
+			"question": "What's the difference between calendar availability and user availability?",
+			"answers": [
+				"Calendar availability reflects the business's start time and day of the week, while user availability specifies the user's working hours."
+			]
+		},
+		{
+			"question": "How does user availability impact appointment bookings?",
+			"answers": [
+				"It influences which team member's availability is considered when a lead books."
+			]
+		},
+		{
+			"question": "Why is the first row of a CSV file important?",
+			"answers": ["It must not be blank"]
+		},
+		{
+			"question": "What are the contact requirements need for the system to link data back to the contact?",
+			"answers": ["An email or phone number"]
+		},
+		{
+			"question": "Which field type has case-sensitive and spelling-sensitive requirements?",
+			"answers": ["Radio button"]
+		},
+		{
+			"question": "Why is cleaning a CSV file important before uploading?",
+			"answers": [
+				"To prevent sending duplicate SMS",
+				"To avoid duplicate messaging",
+				"To improve contact organization"
+			]
+		},
+		{
+			"question": "What is the suggested approach to identifying duplicate values?",
+			"answers": ["Highlight columns with conditional formatting"]
+		},
+		{
+			"question": "If not corrected, how are duplicate records typically handled when uploading the file?",
+			"answers": ["The first duplicate is kept"]
+		},
+		{
+			"question": "Why is the 'Remove Duplicates' function in Excel not recommended?",
+			"answers": ["It removes entire contact records"]
+		},
+		{
+			"question": "Who can access the 'Import Contacts' feature?",
+			"answers": ["Location admin"]
+		},
+		{
+			"question": "What is the purpose of using the 'None' option for unique identifiers?",
+			"answers": ["To generate unique contact IDs for each row"]
+		},
+		{
+			"question": "In the mapping view (before importing list), how are unmatched fields handled?",
+			"answers": ["They can be manually mapped (custom fields) or skipped"]
+		},
+		{
+			"question": "When might you enable the 'Allow Duplicate Contacts' setting?",
+			"answers": ["When importing contacts with shared email/phone numbers"]
+		},
+		{
+			"question": "What is the benefit of using contact IDs as identifiers during import?",
+			"answers": [
+				"It helps create records for contacts using the contact ID instead of relying solely on email and phone numbers as the unique identifiers."
+			]
+		},
+		{
+			"question": "What is one reason for exporting contacts and custom fields?",
+			"answers": ["To perform data analysis in Excel"]
+		},
+		{
+			"question": "Which of the following fields are included in the default export?",
+			"answers": ["Name, email, phone B", "Create date, last activity", "Tags"]
+		},
+		{
+			"question": "How can additional custom fields be included in an export?",
+			"answers": ["By selecting them in the 'columns' menu"]
+		},
+		{
+			"question": "How can you choose specific contacts for export?",
+			"answers": [
+				"By selecting based on parameters set in your smartlist or manually checking the box next to the contacts name"
+			]
+		},
+		{
+			"question": "What is the primary purpose of smart lists?",
+			"answers": ["To segment leads/contacts based on specific criteria."]
+		},
+		{
+			"question": "In filtering, what is the function of 'and' conditions?",
+			"answers": [
+				"To combine multiple filters and find leads that meet all conditions."
+			]
+		},
+		{
+			"question": "What is the purpose of the 'is not' filter option?",
+			"answers": ["To exclude leads that meet a specific condition."]
+		},
+		{
+			"question": "How can smart lists be shared with other users?",
+			"answers": [
+				"By granting access to users within the 'Manage smart list' area."
+			]
+		},
+		{
+			"question": "What is the primary purpose of the Company Object feature in the CRM?",
+			"answers": ["To facilitate communication within organizations"]
+		},
+		{
+			"question": "What is the significance of the 'Company Object' feature when dealing with ",
+			"answers": ["It centralizes all contacts into a single company entity."]
+		},
+		{
+			"question": "What is the purpose of creating custom fields in the CRM?",
+			"answers": ["To store specific information about contacts"]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
 			"question": "",
 			"answers": [""]
 		},
