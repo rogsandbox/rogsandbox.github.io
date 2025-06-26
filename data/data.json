@@ -557,64 +557,76 @@
 			"answers": ["Manually add it after adding a product to the invoice"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Which statement accurately describes the current capability of adding taxes?",
+			"answers": [
+				"Taxes must be manually added to invoices as they are not currently supported on checkout forms."
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "In the system, how are taxes associated with specific clients or business locations?",
+			"answers": [
+				"Taxes must be manually pre-built and linked to corresponding clients."
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "How can taxes be integrated with SaaS payment links in the system?",
+			"answers": [
+				"Taxes are set up using the SaaS configurator for Stripe checkout."
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Which payment gateways can be integrated to enable the creation of invoices?",
+			"answers": ["Both PayPal and Stripe"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of enabling auto-payment for recurring invoices?",
+			"answers": [
+				"To automatically charge the same card used for the first payment"
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Which of the following statements are true about recurring invoices?",
+			"answers": [
+				"Recurring invoices can be created for subscription-based products.",
+				"Discounts can be applied to items in recurring invoices.",
+				"Recurring invoices can be scheduled to be sent monthly, weekly, or yearly."
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Which of the following details are listed for each subscription?",
+			"answers": ["Status of the subscription"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Who can access the Subscription page?",
+			"answers": ["Users on any plan"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What filters are available on the Subscription page? (Select all that apply)",
+			"answers": ["Subscription status"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What information is displayed on the Orders page?",
+			"answers": ["Customer names, source of order, and order status"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Is the Orders page available for all pricing plans?",
+			"answers": ["Yes"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What information about the ordered items can users find on the Orders page?",
+			"answers": ["Item names and the quantity ordered"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of the transactions page?",
+			"answers": ["To track customer payments"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What information is displayed for each transaction on the transactions page?",
+			"answers": ["Transaction date", "Payment source"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "How can you filter transactions on the transactions page? (Select all that apply)",
+			"answers": ["By payment mode"]
 		},
 		{
 			"question": "",
