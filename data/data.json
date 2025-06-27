@@ -706,180 +706,206 @@
 			"answers": ["Restore previous template versions"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Why is using email providers like Mailgun or LC email recommended?",
+			"answers": ["They have direct API integration for better data tracking."]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What does RSS scheduling allow you to do?",
+			"answers": ["Send emails in response to RSS feed updates."]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "In the context of email campaigns, what does the 'unique open rate' represent?",
+			"answers": [
+				"The percentage of contacts who opened the email at least once."
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the primary purpose of a trigger link?",
+			"answers": ["To attribute clicks and trigger actions in workflows."]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Which type of communication channels can trigger links be used in?",
+			"answers": ["SMS and email"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "How can a trigger link be used to initiate a workflow?",
+			"answers": [
+				"By selecting the trigger link 'Trigger' in the workflow settings."
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Where can you find workflows within the system?",
+			"answers": ["Automation tab of the sub account or location"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What are workflow triggers?",
+			"answers": ["Actions that initiate specific sequence of events"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What does the 'allow reentry' setting in workflows do when enabled?",
+			"answers": ["Allows contacts to re-enter an active workflow"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Which of the following actions can be performed within workflows? (Select all that apply)",
+			"answers": ["Sending automated emails or SMS", "Assigning tasks to users"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What does the 'marked as read' setting in communication settings do?",
+			"answers": [
+				"Marks all outgoing automated messages as read in the conversation tab"
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Why would someone choose to build a workflow instead of using the default auto-missed call text-back feature in sub-accounts? (Select all that apply)",
+			"answers": ["Throttle options"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of the auto-missed call text back feature?",
+			"answers": [
+				"To prevent missed opportunities",
+				"Quicker response to missed calls.",
+				"Capture the leads interest before they move onto the next business"
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Where would a user disable the default auto-missed call text back feature for newly generated sub-accounts?",
+			"answers": [
+				"Within the business profile settings located in the sub-account settings"
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of the 'No Show Nurture' recipe?",
+			"answers": ["To promote rescheduling after no-shows"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What trigger would be required for a No-Show workflow to fire/execute when the appointment status is set to 'No Show'?",
+			"answers": [
+				"'Appointment Status' triggers with an appointment status filter set to 'No-show'."
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Why is it important to remove leads from the 'No Show Nurture' after booking?",
+			"answers": [
+				"To avoid overwhelming users with unintentional messages urging them to book, etc."
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "How can you grant a user access to a specific feature if they can't see it?",
+			"answers": [
+				"Adjust the user's permissions and ensure that the sub-account has the specific feature enabled within the agency view."
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "On which subscription plan is the split-testing feature available in the Funnel Builder?",
+			"answers": ["All subscription plans"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the process to add a product to a page in the Funnel Builder?",
+			"answers": ["Create the product under payments, then add it to the page"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Which option is NOT available under the settings section of the Funnel Builder?",
+			"answers": ["adding a domains DNS records"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Why can't a single domain be used for both hosting a website and sending emails?",
+			"answers": [
+				"Each domain must have a dedicated purpose to avoid conflicts"
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What does DNS propagation refer to?",
+			"answers": ["The time it takes for DNS records to be added and mapped"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of a 'custom 404 page'?",
+			"answers": ["To handle broken links and user input errors in URLs."]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of the 'layers' feature within the page builder?",
+			"answers": [
+				"To highlight specific sections and navigate within containers."
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Which elements can you add to your page to display videos?",
+			"answers": ["Hosted videos, HTML5 videos, YouTube videos, and more."]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of the 'two-step order form' element?",
+			"answers": [
+				"It requires users to enter their contact details before proceeding to payment."
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "How can you customize the appearance of navigation menus in the page builder?",
+			"answers": ["By adjusting spacing, colors, typography, and more."]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What can you achieve by using the SEO metadata settings?",
+			"answers": ["Optimize the page's appearance on search engine results."]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is one of the main use cases of forms mentioned in the video?",
+			"answers": ["Collecting data from users/leads"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of the 'Analyze' tab for forms?",
+			"answers": ["To view and categorize form submissions"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Which type of field is suitable for alphanumeric input?",
+			"answers": ["Single or multi line"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "How can forms be added to funnels and websites in the builder?",
+			"answers": ["Using the native 'form element' in the page builder"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "When embedding forms in third-party platforms, what is the purpose of the 'Copy Embed' option?",
+			"answers": ["To obtain the embed code for the form"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Where would you connect a custom form to a calendar?",
+			"answers": ["Calendar customization settings"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the primary focus of the tutorial?",
+			"answers": ["Form-triggered workflow and notification"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of a trigger in a workflow?",
+			"answers": ["To activate actions in the workflow"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "How does the tutorial suggest redirecting 'users' (not leads) upon clicking the notification?",
+			"answers": ["By using the 'Internal action' action in the workflow"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "How does the presenter recommend structuring a survey for best practices?",
+			"answers": ["Keep one question per slide"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "How can auto-navigation be disabled in a survey?",
+			"answers": ["By configuring it in the survey settings"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the main difference between the form builder and the survey builder?",
+			"answers": ["The survey builder has slides"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of setting up a workflow for survey submissions?",
+			"answers": [
+				"To automate notifications and actions based on survey responses"
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Why is it important to use filters when creating a workflow for survey submissions?",
+			"answers": ["Filters help specify when the workflow should be triggered"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What happens if a survey taker submits only part of the survey and leaves some questions unanswered?",
+			"answers": ["The survey data may come back with missing information"]
 		},
 		{
 			"question": "",
