@@ -629,6 +629,671 @@
 			"answers": ["By payment mode"]
 		},
 		{
+			"question": "Which section under the account or location should you navigate to in order to find products?",
+			"answers": ["Payments"]
+		},
+		{
+			"question": "Which payment option listed below does NOT support products? (The user would need to manually input the monetary value)",
+			"answers": ["Text to pay"]
+		},
+		{
+			"question": "What Payment integrations are offered in the system? (Select all that apply)",
+			"answers": ["Stripe", "Authorize.net", "Paypal", "NMI"]
+		},
+		{
+			"question": "Which type of products can be added to an order form?",
+			"answers": ["Products that have been previously created/ imported"]
+		},
+		{
+			"question": "What determines whether a product is a main product or a bump product?",
+			"answers": [
+				"A specific option is selected when adding the product to the page where it will be sold"
+			]
+		},
+		{
+			"question": "How can users verify the products added to the order form?",
+			"answers": ["By previewing the page with the order form"]
+		},
+		{
+			"question": "What does the text-to-pay links feature allow users to do?",
+			"answers": ["Request manual payments through the Conversations tab"]
+		},
+		{
+			"question": "What payment processor is needed to utlize the 'text-to-pay' links feature?",
+			"answers": ["Stripe"]
+		},
+		{
+			"question": "What can users customize when creating text-to-pay a payment request?",
+			"answers": ["Product name, price, due date, and additional options"]
+		},
+		{
+			"question": "What are the two main types of coupons mentioned in the video? (Select all that apply)",
+			"answers": ["Fixed coupons", "Percentage coupons"]
+		},
+		{
+			"question": "What can you restrict when creating a coupon? (Select all that apply)",
+			"answers": ["Number of redemptions", "Specific products"]
+		},
+		{
+			"question": "What information is needed to enable automatic sales receipts? (Select all that apply)",
+			"answers": [
+				"Title",
+				"Receipt prefix",
+				"Receipt start number",
+				"Email template"
+			]
+		},
+		{
+			"question": "Which functionality is not available in payment settings?",
+			"answers": ["Customizing payment links"]
+		},
+		{
+			"question": "What is the purpose of adding tax information in payment settings?",
+			"answers": ["To specify the tax rate and details for invoices"]
+		},
+		{
+			"question": "What is the purpose of A/B split testing in email campaigns?",
+			"answers": [
+				"To analyze the success of subject lines and content variations"
+			]
+		},
+		{
+			"question": "What is the minimum number of contacts required for a split test with six variations?",
+			"answers": ["60 contacts"]
+		},
+		{
+			"question": "What does the 'version history' feature allow users to do?",
+			"answers": ["Restore previous template versions"]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
+			"question": "",
+			"answers": [""]
+		},
+		{
 			"question": "",
 			"answers": [""]
 		},
