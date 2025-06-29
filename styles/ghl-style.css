@@ -1,0 +1,1764 @@
+:root {
+	/* Color Palette */
+	--primary-50: #ffffff;
+	--primary-100: #efefef;
+	--primary-200: #dcdcdc;
+	--primary-300: #bdbdbd;
+	--primary-400: #989898;
+	--primary-500: #7c7c7c;
+	--primary-600: #656565;
+	--primary-700: #525252;
+	--primary-800: #464646;
+	--primary-900: #3d3d3d;
+
+	--neutral-50: #f6f6f6;
+	--neutral-100: #e7e7e7;
+	--neutral-200: #d1d1d1;
+	--neutral-300: #b0b0b0;
+	--neutral-400: #888888;
+	--neutral-500: #666666;
+	--neutral-600: #5d5d5d;
+	--neutral-700: #4f4f4f;
+	--neutral-800: #454545;
+	--neutral-900: #3d3d3d;
+
+	--accent-50: #e5f5ff;
+	--accent-100: #cfedff;
+	--accent-200: #a9daff;
+	--accent-300: #75beff;
+	--accent-400: #3f91ff;
+	--accent-500: #1463ff;
+	--accent-600: #004dff;
+	--accent-700: #004eff;
+	--accent-800: #0046e3;
+	--accent-900: #002790;
+
+	--red-50: #fff0f0;
+	--red-100: #ffdddd;
+	--red-200: #ffc0c0;
+	--red-300: #ff9494;
+	--red-400: #ff5757;
+	--red-500: #ff2323;
+	--red-600: #ff0000;
+	--red-700: #d70000;
+	--red-800: #b10303;
+	--red-900: #920a0a;
+
+	--green-50: #e9ffe4;
+	--green-100: #ccffc4;
+	--green-200: #9eff90;
+	--green-300: #5fff50;
+	--green-400: #29fe1d;
+	--green-500: #07e500;
+	--green-600: #00b800;
+	--green-700: #008000;
+	--green-800: #076d08;
+	--green-900: #0b5c0d;
+
+	--orange-50: #fffcea;
+	--orange-100: #fff5c5;
+	--orange-200: #ffeb85;
+	--orange-300: #ffda46;
+	--orange-400: #ffc71b;
+	--orange-500: #ffa500;
+	--orange-600: #e27c00;
+	--orange-700: #bb5502;
+	--orange-800: #984208;
+	--orange-900: #7c360b;
+
+	--blue-50: #e5f5ff;
+	--blue-100: #cfedff;
+	--blue-200: #a9daff;
+	--blue-300: #75beff;
+	--blue-400: #3f91ff;
+	--blue-500: #1463ff;
+	--blue-600: #004dff;
+	--blue-700: #004eff;
+	--blue-800: #0046e3;
+	--blue-900: #002790;
+
+	/* Responsive Font Size */
+	--text-xs: clamp(0.75rem, 0.6966rem + 0.2034vw, 0.9rem);
+	--text-sm: clamp(0.875rem, 0.8127rem + 0.2373vw, 1.05rem);
+	--text-base: clamp(1rem, 0.9288rem + 0.2712vw, 1.2rem);
+	--text-lg: clamp(1.125rem, 1.0449rem + 0.3051vw, 1.35rem);
+	--text-xl: clamp(1.25rem, 1.161rem + 0.339vw, 1.5rem);
+	--text-2xl: clamp(1.5rem, 1.3932rem + 0.4068vw, 1.8rem);
+	--text-3xl: clamp(1.875rem, 1.7415rem + 0.5085vw, 2.25rem);
+	--text-4xl: clamp(2.25rem, 2.0898rem + 0.6102vw, 2.7rem);
+	--text-5xl: clamp(3rem, 2.7864rem + 0.8136vw, 3.6rem);
+	--text-6xl: clamp(3.75rem, 3.4831rem + 1.0169vw, 4.5rem);
+	--text-7xl: clamp(4.5rem, 4.1797rem + 1.2203vw, 5.4rem);
+	--text-8xl: clamp(6rem, 5.5729rem + 1.6271vw, 7.2rem);
+	--text-9xl: clamp(8rem, 7.4305rem + 2.1695vw, 9.6rem);
+
+	/* Spacing */
+	--space-4: 0.25rem;
+	--space-8: 0.5rem;
+	--space-12: 0.75rem;
+	--space-16: 1rem;
+	--space-20: 1.25rem;
+	--space-24: 1.5rem;
+	--space-32: 2rem;
+	--space-40: 2.5rem;
+	--space-48: 3rem;
+	--space-56: 3.5rem;
+	--space-64: 4rem;
+	--space-72: 4.5rem;
+	--space-80: 5rem;
+	--space-96: 6rem;
+	--space-104: 6.5rem;
+	--space-112: 7rem;
+	--space-120: 7.5rem;
+	--space-128: 8rem;
+	--space-136: 8.5rem;
+	--space-144: 9rem;
+
+	/* Letter spacing factor*/
+	--letter-spacing-factor-x: -0.025;
+	--letter-spacing-factor-xx: -0.05;
+}
+
+.text-xs.text-xs :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+	font-size: var(--text-xs) !important;
+	line-height: calc(1 / 0.75) !important;
+}
+
+.text-sm.text-sm :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+	font-size: var(--text-sm) !important;
+	line-height: calc(1.25 / 0.875) !important;
+}
+
+.text-base.text-base :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+	font-size: var(--text-base) !important;
+	line-height: calc(1.5 / 1) !important;
+}
+
+.text-lg.text-lg :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+	font-size: var(--text-lg) !important;
+	line-height: calc(1.75 / 1.125) !important;
+	letter-spacing: calc(
+		var(--text-lg) * var(--letter-spacing-factor-x)
+	) !important;
+}
+
+.text-xl.text-xl :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+	font-size: var(--text-xl) !important;
+	line-height: calc(1.75 / 1.25) !important;
+	letter-spacing: calc(
+		var(--text-xl) * var(--letter-spacing-factor-x)
+	) !important;
+}
+
+.text-2xl.text-2xl :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+	font-size: var(--text-2xl) !important;
+	line-height: calc(2 / 1.5) !important;
+	letter-spacing: calc(
+		var(--text-2xl) * var(--letter-spacing-factor-xx)
+	) !important;
+}
+
+.text-3xl.text-3xl :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+	font-size: var(--text-3xl) !important;
+	line-height: calc(2.25 / 1.875) !important;
+	letter-spacing: calc(
+		var(--text-3xl) * var(--letter-spacing-factor-xx)
+	) !important;
+}
+
+.text-4xl.text-4xl :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+	font-size: var(--text-4xl) !important;
+	line-height: calc(2.5 / 2.25) !important;
+	letter-spacing: calc(
+		var(--text-4xl) * var(--letter-spacing-factor-xx)
+	) !important;
+}
+
+.text-5xl.text-5xl :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+	font-size: var(--text-5xl) !important;
+	line-height: 1 !important;
+	letter-spacing: calc(
+		var(--text-5xl) * var(--letter-spacing-factor-xx)
+	) !important;
+}
+
+.text-6xl.text-6xl :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+	font-size: var(--text-6xl) !important;
+	line-height: 1 !important;
+	letter-spacing: calc(
+		var(--text-6xl) * var(--letter-spacing-factor-xx)
+	) !important;
+}
+
+.text-7xl.text-7xl :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+	font-size: var(--text-7xl) !important;
+	line-height: 1 !important;
+	letter-spacing: calc(
+		var(--text-7xl) * var(--letter-spacing-factor-xx)
+	) !important;
+}
+
+.text-8xl.text-8xl :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+	font-size: var(--text-8xl) !important;
+	line-height: 1 !important;
+	letter-spacing: calc(
+		var(--text-8xl) * var(--letter-spacing-factor-xx)
+	) !important;
+}
+
+.text-9xl.text-9xl :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+	font-size: var(--text-9xl) !important;
+	line-height: 1 !important;
+	letter-spacing: calc(
+		var(--text-9xl) * var(--letter-spacing-factor-xx)
+	) !important;
+}
+
+.text-max-w-300.text-max-w-300 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol),
+.text-max-w-350.text-max-w-350 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol),
+.text-max-w-400.text-max-w-400 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol),
+.text-max-w-450.text-max-w-450 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol),
+.text-max-w-500.text-max-w-500 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol),
+.text-max-w-550.text-max-w-550 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol),
+.text-max-w-600.text-max-w-600 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol),
+.text-max-w-650.text-max-w-650 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol),
+.text-max-w-700.text-max-w-700 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol),
+.text-max-w-750.text-max-w-750 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol),
+.text-max-w-800.text-max-w-800 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol),
+.text-max-w-850.text-max-w-850 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol),
+.text-max-w-900.text-max-w-900 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol),
+.text-max-w-950.text-max-w-950 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+	max-width: 100% !important;
+}
+
+.bg-primary-50.bg-primary-50 {
+	background-color: var(--primary-50) !important;
+}
+
+.bg-primary-100.bg-primary-100 {
+	background-color: var(--primary-100) !important;
+}
+
+.bg-primary-200.bg-primary-200 {
+	background-color: var(--primary-200) !important;
+}
+
+.bg-primary-300.bg-primary-300 {
+	background-color: var(--primary-300) !important;
+}
+
+.bg-primary-400.bg-primary-400 {
+	background-color: var(--primary-400) !important;
+}
+
+.bg-primary-500.bg-primary-500 {
+	background-color: var(--primary-500) !important;
+}
+
+.bg-primary-600.bg-primary-600 {
+	background-color: var(--primary-600) !important;
+}
+
+.bg-primary-700.bg-primary-700 {
+	background-color: var(--primary-700) !important;
+}
+
+.bg-primary-800.bg-primary-800 {
+	background-color: var(--primary-800) !important;
+}
+
+.bg-primary-900.bg-primary-900 {
+	background-color: var(--primary-900) !important;
+}
+
+.bg-neutral-50.bg-neutral-50 {
+	background-color: var(--neutral-50) !important;
+}
+
+.bg-neutral-100.bg-neutral-100 {
+	background-color: var(--neutral-100) !important;
+}
+
+.bg-neutral-200.bg-neutral-200 {
+	background-color: var(--neutral-200) !important;
+}
+
+.bg-neutral-300.bg-neutral-300 {
+	background-color: var(--neutral-300) !important;
+}
+
+.bg-neutral-400.bg-neutral-400 {
+	background-color: var(--neutral-400) !important;
+}
+
+.bg-neutral-500.bg-neutral-500 {
+	background-color: var(--neutral-500) !important;
+}
+
+.bg-neutral-600.bg-neutral-600 {
+	background-color: var(--neutral-600) !important;
+}
+
+.bg-neutral-700.bg-neutral-700 {
+	background-color: var(--neutral-700) !important;
+}
+
+.bg-neutral-800.bg-neutral-800 {
+	background-color: var(--neutral-800) !important;
+}
+
+.bg-neutral-900.bg-neutral-900 {
+	background-color: var(--neutral-900) !important;
+}
+
+.bg-accent-50.bg-accent-50 {
+	background-color: var(--accent-50) !important;
+}
+
+.bg-accent-100.bg-accent-100 {
+	background-color: var(--accent-100) !important;
+}
+
+.bg-accent-200.bg-accent-200 {
+	background-color: var(--accent-200) !important;
+}
+
+.bg-accent-300.bg-accent-300 {
+	background-color: var(--accent-300) !important;
+}
+
+.bg-accent-400.bg-accent-400 {
+	background-color: var(--accent-400) !important;
+}
+
+.bg-accent-500.bg-accent-500 {
+	background-color: var(--accent-500) !important;
+}
+
+.bg-accent-600.bg-accent-600 {
+	background-color: var(--accent-600) !important;
+}
+
+.bg-accent-700.bg-accent-700 {
+	background-color: var(--accent-700) !important;
+}
+
+.bg-accent-800.bg-accent-800 {
+	background-color: var(--accent-800) !important;
+}
+
+.bg-accent-900.bg-accent-900 {
+	background-color: var(--accent-900) !important;
+}
+
+.bg-red-50.bg-red-50 {
+	background-color: var(--red-50) !important;
+}
+
+.bg-red-100.bg-red-100 {
+	background-color: var(--red-100) !important;
+}
+
+.bg-red-200.bg-red-200 {
+	background-color: var(--red-200) !important;
+}
+
+.bg-red-300.bg-red-300 {
+	background-color: var(--red-300) !important;
+}
+
+.bg-red-400.bg-red-400 {
+	background-color: var(--red-400) !important;
+}
+
+.bg-red-500.bg-red-500 {
+	background-color: var(--red-500) !important;
+}
+
+.bg-red-600.bg-red-600 {
+	background-color: var(--red-600) !important;
+}
+
+.bg-red-700.bg-red-700 {
+	background-color: var(--red-700) !important;
+}
+
+.bg-red-800.bg-red-800 {
+	background-color: var(--red-800) !important;
+}
+
+.bg-red-900.bg-red-900 {
+	background-color: var(--red-900) !important;
+}
+
+.bg-green-50.bg-green-50 {
+	background-color: var(--green-50) !important;
+}
+
+.bg-green-100.bg-green-100 {
+	background-color: var(--green-100) !important;
+}
+
+.bg-green-200.bg-green-200 {
+	background-color: var(--green-200) !important;
+}
+
+.bg-green-300.bg-green-300 {
+	background-color: var(--green-300) !important;
+}
+
+.bg-green-400.bg-green-400 {
+	background-color: var(--green-400) !important;
+}
+
+.bg-green-500.bg-green-500 {
+	background-color: var(--green-500) !important;
+}
+
+.bg-green-600.bg-green-600 {
+	background-color: var(--green-600) !important;
+}
+
+.bg-green-700.bg-green-700 {
+	background-color: var(--green-700) !important;
+}
+
+.bg-green-800.bg-green-800 {
+	background-color: var(--green-800) !important;
+}
+
+.bg-green-900.bg-green-900 {
+	background-color: var(--green-900) !important;
+}
+
+.bg-orange-50.bg-orange-50 {
+	background-color: var(--orange-50) !important;
+}
+
+.bg-orange-100.bg-orange-100 {
+	background-color: var(--orange-100) !important;
+}
+
+.bg-orange-200.bg-orange-200 {
+	background-color: var(--orange-200) !important;
+}
+
+.bg-orange-300.bg-orange-300 {
+	background-color: var(--orange-300) !important;
+}
+
+.bg-orange-400.bg-orange-400 {
+	background-color: var(--orange-400) !important;
+}
+
+.bg-orange-500.bg-orange-500 {
+	background-color: var(--orange-500) !important;
+}
+
+.bg-orange-600.bg-orange-600 {
+	background-color: var(--orange-600) !important;
+}
+
+.bg-orange-700.bg-orange-700 {
+	background-color: var(--orange-700) !important;
+}
+
+.bg-orange-800.bg-orange-800 {
+	background-color: var(--orange-800) !important;
+}
+
+.bg-orange-900.bg-orange-900 {
+	background-color: var(--orange-900) !important;
+}
+
+.bg-blue-50.bg-blue-50 {
+	background-color: var(--blue-50) !important;
+}
+
+.bg-blue-100.bg-blue-100 {
+	background-color: var(--blue-100) !important;
+}
+
+.bg-blue-200.bg-blue-200 {
+	background-color: var(--blue-200) !important;
+}
+
+.bg-blue-300.bg-blue-300 {
+	background-color: var(--blue-300) !important;
+}
+
+.bg-blue-400.bg-blue-400 {
+	background-color: var(--blue-400) !important;
+}
+
+.bg-blue-500.bg-blue-500 {
+	background-color: var(--blue-500) !important;
+}
+
+.bg-blue-600.bg-blue-600 {
+	background-color: var(--blue-600) !important;
+}
+
+.bg-blue-700.bg-blue-700 {
+	background-color: var(--blue-700) !important;
+}
+
+.bg-blue-800.bg-blue-800 {
+	background-color: var(--blue-800) !important;
+}
+
+.bg-blue-900.bg-blue-900 {
+	background-color: var(--blue-900) !important;
+}
+
+.text-primary-50.text-primary-50 {
+	color: var(--primary-50) !important;
+}
+
+.text-primary-100.text-primary-100 {
+	color: var(--primary-100) !important;
+}
+
+.text-primary-200.text-primary-200 {
+	color: var(--primary-200) !important;
+}
+
+.text-primary-300.text-primary-300 {
+	color: var(--primary-300) !important;
+}
+
+.text-primary-400.text-primary-400 {
+	color: var(--primary-400) !important;
+}
+
+.text-primary-500.text-primary-500 {
+	color: var(--primary-500) !important;
+}
+
+.text-primary-600.text-primary-600 {
+	color: var(--primary-600) !important;
+}
+
+.text-primary-700.text-primary-700 {
+	color: var(--primary-700) !important;
+}
+
+.text-primary-800.text-primary-800 {
+	color: var(--primary-800) !important;
+}
+
+.text-primary-900.text-primary-900 {
+	color: var(--primary-900) !important;
+}
+
+.text-neutral-50.text-neutral-50 {
+	color: var(--neutral-50) !important;
+}
+
+.text-neutral-100.text-neutral-100 {
+	color: var(--neutral-100) !important;
+}
+
+.text-neutral-200.text-neutral-200 {
+	color: var(--neutral-200) !important;
+}
+
+.text-neutral-300.text-neutral-300 {
+	color: var(--neutral-300) !important;
+}
+
+.text-neutral-400.text-neutral-400 {
+	color: var(--neutral-400) !important;
+}
+
+.text-neutral-500.text-neutral-500 {
+	color: var(--neutral-500) !important;
+}
+
+.text-neutral-600.text-neutral-600 {
+	color: var(--neutral-600) !important;
+}
+
+.text-neutral-700.text-neutral-700 {
+	color: var(--neutral-700) !important;
+}
+
+.text-neutral-800.text-neutral-800 {
+	color: var(--neutral-800) !important;
+}
+
+.text-neutral-900.text-neutral-900 {
+	color: var(--neutral-900) !important;
+}
+
+.text-accent-50.text-accent-50 {
+	color: var(--accent-50) !important;
+}
+
+.text-accent-100.text-accent-100 {
+	color: var(--accent-100) !important;
+}
+
+.text-accent-200.text-accent-200 {
+	color: var(--accent-200) !important;
+}
+
+.text-accent-300.text-accent-300 {
+	color: var(--accent-300) !important;
+}
+
+.text-accent-400.text-accent-400 {
+	color: var(--accent-400) !important;
+}
+
+.text-accent-500.text-accent-500 {
+	color: var(--accent-500) !important;
+}
+
+.text-accent-600.text-accent-600 {
+	color: var(--accent-600) !important;
+}
+
+.text-accent-700.text-accent-700 {
+	color: var(--accent-700) !important;
+}
+
+.text-accent-800.text-accent-800 {
+	color: var(--accent-800) !important;
+}
+
+.text-accent-900.text-accent-900 {
+	color: var(--accent-900) !important;
+}
+
+.text-red-50.text-red-50 {
+	color: var(--red-50) !important;
+}
+
+.text-red-100.text-red-100 {
+	color: var(--red-100) !important;
+}
+
+.text-red-200.text-red-200 {
+	color: var(--red-200) !important;
+}
+
+.text-red-300.text-red-300 {
+	color: var(--red-300) !important;
+}
+
+.text-red-400.text-red-400 {
+	color: var(--red-400) !important;
+}
+
+.text-red-500.text-red-500 {
+	color: var(--red-500) !important;
+}
+
+.text-red-600.text-red-600 {
+	color: var(--red-600) !important;
+}
+
+.text-red-700.text-red-700 {
+	color: var(--red-700) !important;
+}
+
+.text-red-800.text-red-800 {
+	color: var(--red-800) !important;
+}
+
+.text-red-900.text-red-900 {
+	color: var(--red-900) !important;
+}
+
+.text-green-50.text-green-50 {
+	color: var(--green-50) !important;
+}
+
+.text-green-100.text-green-100 {
+	color: var(--green-100) !important;
+}
+
+.text-green-200.text-green-200 {
+	color: var(--green-200) !important;
+}
+
+.text-green-300.text-green-300 {
+	color: var(--green-300) !important;
+}
+
+.text-green-400.text-green-400 {
+	color: var(--green-400) !important;
+}
+
+.text-green-500.text-green-500 {
+	color: var(--green-500) !important;
+}
+
+.text-green-600.text-green-600 {
+	color: var(--green-600) !important;
+}
+
+.text-green-700.text-green-700 {
+	color: var(--green-700) !important;
+}
+
+.text-green-800.text-green-800 {
+	color: var(--green-800) !important;
+}
+
+.text-green-900.text-green-900 {
+	color: var(--green-900) !important;
+}
+
+.text-orange-50.text-orange-50 {
+	color: var(--orange-50) !important;
+}
+
+.text-orange-100.text-orange-100 {
+	color: var(--orange-100) !important;
+}
+
+.text-orange-200.text-orange-200 {
+	color: var(--orange-200) !important;
+}
+
+.text-orange-300.text-orange-300 {
+	color: var(--orange-300) !important;
+}
+
+.text-orange-400.text-orange-400 {
+	color: var(--orange-400) !important;
+}
+
+.text-orange-500.text-orange-500 {
+	color: var(--orange-500) !important;
+}
+
+.text-orange-600.text-orange-600 {
+	color: var(--orange-600) !important;
+}
+
+.text-orange-700.text-orange-700 {
+	color: var(--orange-700) !important;
+}
+
+.text-orange-800.text-orange-800 {
+	color: var(--orange-800) !important;
+}
+
+.text-orange-900.text-orange-900 {
+	color: var(--orange-900) !important;
+}
+
+/* === SPACING: 4 === */
+.m-4.m-4 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-4) !important;
+}
+
+.mx-4.mx-4 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-4) !important;
+}
+
+.mx-auto.mx-auto :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: 0 auto !important;
+}
+
+.my-auto.my-auto :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: 0 auto !important;
+}
+
+.my-4.my-4 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-4) auto !important;
+}
+
+.mt-4.mt-4 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-4) !important;
+}
+
+.mb-4.mb-4 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-4) !important;
+}
+
+.mr-4.mr-4 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-4) !important;
+}
+
+.ml-4.ml-4 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-4) !important;
+}
+
+.p-4.p-4 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-4) !important;
+}
+.px-4.px-4 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-4) !important;
+}
+.py-4.py-4 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-4) auto !important;
+}
+.pt-4.pt-4 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-4) !important;
+}
+.pb-4.pb-4 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-4) !important;
+}
+.pr-4.pr-4 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-4) !important;
+}
+.pl-4.pl-4 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-4) !important;
+}
+
+/* === SPACING: 8 === */
+.m-8.m-8 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-8) !important;
+}
+
+.mx-8.mx-8 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-8) !important;
+}
+
+.my-8.my-8 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-8) auto !important;
+}
+
+.mt-8.mt-8 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-8) !important;
+}
+
+.mb-8.mb-8 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-8) !important;
+}
+
+.mr-8.mr-8 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-8) !important;
+}
+
+.ml-8.ml-8 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-8) !important;
+}
+
+.p-8.p-8 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-8) !important;
+}
+.px-8.px-8 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-8) !important;
+}
+.py-8.py-8 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-8) auto !important;
+}
+.pt-8.pt-8 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-8) !important;
+}
+.pb-8.pb-8 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-8) !important;
+}
+.pr-8.pr-8 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-8) !important;
+}
+.pl-8.pl-8 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-8) !important;
+}
+
+/* === SPACING: 12 === */
+.m-12.m-12 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-12) !important;
+}
+
+.mx-12.mx-12 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-12) !important;
+}
+
+.my-12.my-12 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-12) auto !important;
+}
+
+.mt-12.mt-12 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-12) !important;
+}
+
+.mb-12.mb-12 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-12) !important;
+}
+
+.mr-12.mr-12 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-12) !important;
+}
+
+.ml-12.ml-12 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-12) !important;
+}
+
+.p-12.p-12 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-12) !important;
+}
+.px-12.px-12 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-12) !important;
+}
+.py-12.py-12 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-12) auto !important;
+}
+.pt-12.pt-12 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-12) !important;
+}
+.pb-12.pb-12 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-12) !important;
+}
+.pr-12.pr-12 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-12) !important;
+}
+.pl-12.pl-12 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-12) !important;
+}
+
+/* === SPACING: 16 === */
+.m-16.m-16 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-16) !important;
+}
+
+.mx-16.mx-16 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-16) !important;
+}
+
+.my-16.my-16 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-16) auto !important;
+}
+
+.mt-16.mt-16 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-16) !important;
+}
+
+.mb-16.mb-16 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-16) !important;
+}
+
+.mr-16.mr-16 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-16) !important;
+}
+
+.ml-16.ml-16 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-16) !important;
+}
+
+.p-16.p-16 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-16) !important;
+}
+.px-16.px-16 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-16) !important;
+}
+.py-16.py-16 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-16) auto !important;
+}
+.pt-16.pt-16 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-16) !important;
+}
+.pb-16.pb-16 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-16) !important;
+}
+.pr-16.pr-16 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-16) !important;
+}
+.pl-16.pl-16 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-16) !important;
+}
+
+/* === SPACING: 20 === */
+.m-20.m-20 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-20) !important;
+}
+
+.mx-20.mx-20 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-20) !important;
+}
+
+.my-20.my-20 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-20) auto !important;
+}
+
+.mt-20.mt-20 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-20) !important;
+}
+
+.mb-20.mb-20 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-20) !important;
+}
+
+.mr-20.mr-20 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-20) !important;
+}
+
+.ml-20.ml-20 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-20) !important;
+}
+
+.p-20.p-20 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-20) !important;
+}
+.px-20.px-20 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-20) !important;
+}
+.py-20.py-20 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-20) auto !important;
+}
+.pt-20.pt-20 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-20) !important;
+}
+.pb-20.pb-20 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-20) !important;
+}
+.pr-20.pr-20 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-20) !important;
+}
+.pl-20.pl-20 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-20) !important;
+}
+
+/* === SPACING: 24 === */
+.m-24.m-24 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-24) !important;
+}
+.mx-24.mx-24 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-24) !important;
+}
+.my-24.my-24 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-24) auto !important;
+}
+.mt-24.mt-24 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-24) !important;
+}
+.mb-24.mb-24 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-24) !important;
+}
+.mr-24.mr-24 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-24) !important;
+}
+.ml-24.ml-24 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-24) !important;
+}
+
+.p-24.p-24 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-24) !important;
+}
+.px-24.px-24 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-24) !important;
+}
+.py-24.py-24 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-24) auto !important;
+}
+.pt-24.pt-24 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-24) !important;
+}
+.pb-24.pb-24 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-24) !important;
+}
+.pr-24.pr-24 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-24) !important;
+}
+.pl-24.pl-24 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-24) !important;
+}
+
+/* === SPACING: 32 === */
+.m-32.m-32 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-32) !important;
+}
+.mx-32.mx-32 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-32) !important;
+}
+.my-32.my-32 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-32) auto !important;
+}
+.mt-32.mt-32 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-32) !important;
+}
+.mb-32.mb-32 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-32) !important;
+}
+.mr-32.mr-32 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-32) !important;
+}
+.ml-32.ml-32 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-32) !important;
+}
+
+.p-32.p-32 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-32) !important;
+}
+.px-32.px-32 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-32) !important;
+}
+.py-32.py-32 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-32) auto !important;
+}
+.pt-32.pt-32 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-32) !important;
+}
+.pb-32.pb-32 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-32) !important;
+}
+.pr-32.pr-32 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-32) !important;
+}
+.pl-32.pl-32 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-32) !important;
+}
+
+/* === SPACING: 40 === */
+.m-40.m-40 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-40) !important;
+}
+.mx-40.mx-40 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-40) !important;
+}
+.my-40.my-40 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-40) auto !important;
+}
+.mt-40.mt-40 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-40) !important;
+}
+.mb-40.mb-40 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-40) !important;
+}
+.mr-40.mr-40 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-40) !important;
+}
+.ml-40.ml-40 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-40) !important;
+}
+
+.p-40.p-40 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-40) !important;
+}
+.px-40.px-40 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-40) !important;
+}
+.py-40.py-40 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-40) auto !important;
+}
+.pt-40.pt-40 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-40) !important;
+}
+.pb-40.pb-40 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-40) !important;
+}
+.pr-40.pr-40 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-40) !important;
+}
+.pl-40.pl-40 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-40) !important;
+}
+
+/* === SPACING: 48 === */
+.m-48.m-48 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-48) !important;
+}
+.mx-48.mx-48 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-48) !important;
+}
+.my-48.my-48 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-48) auto !important;
+}
+.mt-48.mt-48 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-48) !important;
+}
+.mb-48.mb-48 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-48) !important;
+}
+.mr-48.mr-48 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-48) !important;
+}
+.ml-48.ml-48 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-48) !important;
+}
+
+.p-48.p-48 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-48) !important;
+}
+.px-48.px-48 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-48) !important;
+}
+.py-48.py-48 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-48) auto !important;
+}
+.pt-48.pt-48 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-48) !important;
+}
+.pb-48.pb-48 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-48) !important;
+}
+.pr-48.pr-48 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-48) !important;
+}
+.pl-48.pl-48 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-48) !important;
+}
+
+/* === SPACING: 56 === */
+.m-56.m-56 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-56) !important;
+}
+.mx-56.mx-56 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-56) !important;
+}
+.my-56.my-56 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-56) auto !important;
+}
+.mt-56.mt-56 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-56) !important;
+}
+.mb-56.mb-56 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-56) !important;
+}
+.mr-56.mr-56 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-56) !important;
+}
+.ml-56.ml-56 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-56) !important;
+}
+
+.p-56.p-56 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-56) !important;
+}
+.px-56.px-56 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-56) !important;
+}
+.py-56.py-56 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-56) auto !important;
+}
+.pt-56.pt-56 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-56) !important;
+}
+.pb-56.pb-56 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-56) !important;
+}
+.pr-56.pr-56 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-56) !important;
+}
+.pl-56.pl-56 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-56) !important;
+}
+
+/* === SPACING: 64 === */
+.m-64.m-64 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-64) !important;
+}
+.mx-64.mx-64 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-64) !important;
+}
+.my-64.my-64 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-64) auto !important;
+}
+.mt-64.mt-64 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-64) !important;
+}
+.mb-64.mb-64 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-64) !important;
+}
+.mr-64.mr-64 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-64) !important;
+}
+.ml-64.ml-64 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-64) !important;
+}
+
+.p-64.p-64 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-64) !important;
+}
+.px-64.px-64 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-64) !important;
+}
+.py-64.py-64 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-64) auto !important;
+}
+.pt-64.pt-64 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-64) !important;
+}
+.pb-64.pb-64 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-64) !important;
+}
+.pr-64.pr-64 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-64) !important;
+}
+.pl-64.pl-64 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-64) !important;
+}
+
+/* === SPACING: 72 === */
+.m-72.m-72 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-72) !important;
+}
+.mx-72.mx-72 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-72) !important;
+}
+.my-72.my-72 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-72) auto !important;
+}
+.mt-72.mt-72 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-72) !important;
+}
+.mb-72.mb-72 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-72) !important;
+}
+.mr-72.mr-72 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-72) !important;
+}
+.ml-72.ml-72 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-72) !important;
+}
+
+.p-72.p-72 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-72) !important;
+}
+.px-72.px-72 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-72) !important;
+}
+.py-72.py-72 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-72) auto !important;
+}
+.pt-72.pt-72 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-72) !important;
+}
+.pb-72.pb-72 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-72) !important;
+}
+.pr-72.pr-72 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-72) !important;
+}
+.pl-72.pl-72 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-72) !important;
+}
+
+/* === SPACING: 80 === */
+.m-80.m-80 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-80) !important;
+}
+.mx-80.mx-80 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-80) !important;
+}
+.my-80.my-80 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-80) auto !important;
+}
+.mt-80.mt-80 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-80) !important;
+}
+.mb-80.mb-80 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-80) !important;
+}
+.mr-80.mr-80 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-80) !important;
+}
+.ml-80.ml-80 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-80) !important;
+}
+
+.p-80.p-80 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-80) !important;
+}
+.px-80.px-80 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-80) !important;
+}
+.py-80.py-80 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-80) auto !important;
+}
+.pt-80.pt-80 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-80) !important;
+}
+.pb-80.pb-80 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-80) !important;
+}
+.pr-80.pr-80 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-80) !important;
+}
+.pl-80.pl-80 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-80) !important;
+}
+
+/* === SPACING: 96 === */
+.m-96.m-96 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-96) !important;
+}
+.mx-96.mx-96 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-96) !important;
+}
+.my-96.my-96 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-96) auto !important;
+}
+.mt-96.mt-96 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-96) !important;
+}
+.mb-96.mb-96 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-96) !important;
+}
+.mr-96.mr-96 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-96) !important;
+}
+.ml-96.ml-96 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-96) !important;
+}
+
+.p-96.p-96 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-96) !important;
+}
+.px-96.px-96 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-96) !important;
+}
+.py-96.py-96 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-96) auto !important;
+}
+.pt-96.pt-96 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-96) !important;
+}
+.pb-96.pb-96 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-96) !important;
+}
+.pr-96.pr-96 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-96) !important;
+}
+.pl-96.pl-96 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-96) !important;
+}
+
+/* === SPACING: 104 === */
+.m-104.m-104 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-104) !important;
+}
+.mx-104.mx-104 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-104) !important;
+}
+.my-104.my-104 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-104) auto !important;
+}
+.mt-104.mt-104 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-104) !important;
+}
+.mb-104.mb-104 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-104) !important;
+}
+.mr-104.mr-104 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-104) !important;
+}
+.ml-104.ml-104 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-104) !important;
+}
+
+.p-104.p-104 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-104) !important;
+}
+.px-104.px-104 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-104) !important;
+}
+.py-104.py-104 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-104) auto !important;
+}
+.pt-104.pt-104 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-104) !important;
+}
+.pb-104.pb-104 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-104) !important;
+}
+.pr-104.pr-104 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-104) !important;
+}
+.pl-104.pl-104 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-104) !important;
+}
+
+/* === SPACING: 112 === */
+.m-112.m-112 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-112) !important;
+}
+.mx-112.mx-112 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-112) !important;
+}
+.my-112.my-112 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-112) auto !important;
+}
+.mt-112.mt-112 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-112) !important;
+}
+.mb-112.mb-112 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-112) !important;
+}
+.mr-112.mr-112 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-112) !important;
+}
+.ml-112.ml-112 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-112) !important;
+}
+
+.p-112.p-112 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-112) !important;
+}
+.px-112.px-112 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-112) !important;
+}
+.py-112.py-112 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-112) auto !important;
+}
+.pt-112.pt-112 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-112) !important;
+}
+.pb-112.pb-112 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-112) !important;
+}
+.pr-112.pr-112 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-112) !important;
+}
+.pl-112.pl-112 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-112) !important;
+}
+
+/* === SPACING: 120 === */
+.m-120.m-120 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-120) !important;
+}
+.mx-120.mx-120 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-120) !important;
+}
+.my-120.my-120 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-120) auto !important;
+}
+.mt-120.mt-120 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-120) !important;
+}
+.mb-120.mb-120 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-120) !important;
+}
+.mr-120.mr-120 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-120) !important;
+}
+.ml-120.ml-120 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-120) !important;
+}
+
+.p-120.p-120 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-120) !important;
+}
+.px-120.px-120 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-120) !important;
+}
+.py-120.py-120 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-120) auto !important;
+}
+.pt-120.pt-120 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-120) !important;
+}
+.pb-120.pb-120 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-120) !important;
+}
+.pr-120.pr-120 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-120) !important;
+}
+.pl-120.pl-120 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-120) !important;
+}
+
+/* === SPACING: 128 === */
+.m-128.m-128 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-128) !important;
+}
+.mx-128.mx-128 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-128) !important;
+}
+.my-128.my-128 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-128) auto !important;
+}
+.mt-128.mt-128 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-128) !important;
+}
+.mb-128.mb-128 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-128) !important;
+}
+.mr-128.mr-128 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-128) !important;
+}
+.ml-128.ml-128 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-128) !important;
+}
+
+.p-128.p-128 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-128) !important;
+}
+.px-128.px-128 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-128) !important;
+}
+.py-128.py-128 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-128) auto !important;
+}
+.pt-128.pt-128 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-128) !important;
+}
+.pb-128.pb-128 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-128) !important;
+}
+.pr-128.pr-128 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-128) !important;
+}
+.pl-128.pl-128 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-128) !important;
+}
+
+/* === SPACING: 136 === */
+.m-136.m-136 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-136) !important;
+}
+.mx-136.mx-136 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-136) !important;
+}
+.my-136.my-136 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-136) auto !important;
+}
+.mt-136.mt-136 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-136) !important;
+}
+.mb-136.mb-136 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-136) !important;
+}
+.mr-136.mr-136 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-136) !important;
+}
+.ml-136.ml-136 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-136) !important;
+}
+
+.p-136.p-136 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-136) !important;
+}
+.px-136.px-136 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-136) !important;
+}
+.py-136.py-136 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-136) auto !important;
+}
+.pt-136.pt-136 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-136) !important;
+}
+.pb-136.pb-136 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-136) !important;
+}
+.pr-136.pr-136 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-136) !important;
+}
+.pl-136.pl-136 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-136) !important;
+}
+
+/* === SPACING: 144 === */
+.m-144.m-144 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-144) !important;
+}
+.mx-144.mx-144 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: auto var(--space-144) !important;
+}
+.my-144.my-144 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin: var(--space-144) auto !important;
+}
+.mt-144.mt-144 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-top: var(--space-144) !important;
+}
+.mb-144.mb-144 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-bottom: var(--space-144) !important;
+}
+.mr-144.mr-144 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-right: var(--space-144) !important;
+}
+.ml-144.ml-144 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	margin-left: var(--space-144) !important;
+}
+
+.p-144.p-144 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-144) !important;
+}
+.px-144.px-144 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: auto var(--space-144) !important;
+}
+.py-144.py-144 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding: var(--space-144) auto !important;
+}
+.pt-144.pt-144 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-top: var(--space-144) !important;
+}
+.pb-144.pb-144 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-bottom: var(--space-144) !important;
+}
+.pr-144.pr-144 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-right: var(--space-144) !important;
+}
+.pl-144.pl-144 :is(h1, h2, h3, h4, h5, h6, p, span) {
+	padding-left: var(--space-144) !important;
+}
+
+/* Small tablets (≥ 600px) */
+@media (min-width: 37.5rem) {
+	.text-max-w-300.text-max-w-300 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+		max-width: 37.5ch !important;
+	}
+
+	.text-max-w-350.text-max-w-350 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+		max-width: 43.75ch !important;
+	}
+
+	.text-max-w-400.text-max-w-400 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+		max-width: 50ch !important;
+	}
+
+	.text-max-w-450.text-max-w-450 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+		max-width: 56.25ch !important;
+	}
+
+	.text-max-w-500.text-max-w-500 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+		max-width: 62.5ch !important;
+	}
+
+	.text-max-w-550.text-max-w-550 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+		max-width: 68.75ch !important;
+	}
+
+	.text-max-w-600.text-max-w-600 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+		max-width: 75ch !important;
+	}
+
+	.text-max-w-650.text-max-w-650 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+		max-width: 81.25ch !important;
+	}
+
+	.text-max-w-700.text-max-w-700 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+		max-width: 87.5ch !important;
+	}
+
+	.text-max-w-750.text-max-w-750 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+		max-width: 93.75ch !important;
+	}
+
+	.text-max-w-800.text-max-w-800 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+		max-width: 100ch !important;
+	}
+
+	.text-max-w-850.text-max-w-850 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+		max-width: 106.25ch !important;
+	}
+
+	.text-max-w-900.text-max-w-900 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+		max-width: 112.5ch !important;
+	}
+
+	.text-max-w-950.text-max-w-950 :is(h1, h2, h3, h4, h5, h6, p, span, ul, ol) {
+		max-width: 118.75ch !important;
+	}
+}
+
+/* Tablets (≥ 768px) */
+@media (min-width: 48rem) {
+	/* Do some magic! */
+}
+
+/* Laptops/desktops (≥ 1024px) */
+@media (min-width: 64rem) {
+	/* Do some magic! */
+}
+
+/* Large screens (≥ 1280px) */
+@media (min-width: 80rem) {
+	/* Do some magic! */
+}
