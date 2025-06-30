@@ -17,10 +17,11 @@
 		<div id="app">
 			<div class="social-wrapper">
 				<div class="social-content">
-					<ul class="w-full">
-						<li class="text">LET'S CONNECT ON:</li>
+					<span class="text sr-only">LET'S CONNECT ON:</span>
+					<ul class="w-full" role="navigation">
 						<li>
 							<a
+								aria-label="Click to contact me on facebook.com"
 								data-social="facebook"
 								href="https://www.facebook.com/rcvioleta"
 								target="_blank"
@@ -29,6 +30,7 @@
 						</li>
 						<li>
 							<a
+								aria-label="Click to contact me on linkedin.com"
 								data-social="linkedin"
 								href="https://www.linkedin.com/in/rcvioleta/"
 								target="_blank"
@@ -37,6 +39,7 @@
 						</li>
 						<li>
 							<a
+								aria-label="Click to contact me on youtube.com"
 								data-social="youtube"
 								href="https://www.youtube.com/@roviotech9072"
 								target="_blank"
@@ -254,8 +257,7 @@
 								</p>
 							</div>
 							<h1 class="heading-lg">
-								Turn clicks into customers with smart,
-								<span class="emphasize-text">conversion-focused design</span>
+								Turn clicks into customers with smart, conversion-focused design
 							</h1>
 							<p class="subtext-md">
 								From intuitive websites to automated workflows, I build digital
@@ -263,10 +265,14 @@
 								business results.
 							</p>
 							<div class="cta-container">
-								<a href="mailto:rcvioleta13@gmail.com" class="btn btn-secondary"
+								<a
+									role="button"
+									aria-label="Click to contact me via E-mail"
+									href="mailto:rcvioleta13@gmail.com"
+									class="btn btn-secondary"
 									>Contact Me</a
 								>
-								<p style="max-width: 8.75rem" class="subtext-xs">
+								<p class="subtext-sm">
 									Backed by experience. Focused on results.
 								</p>
 							</div>
@@ -518,19 +524,20 @@
 								<div class="card">
 									<div class="card-thumbnail">
 										<div class="card-thumbnail-backdrop">
-											<h1>Telehealth</h1>
+											<h1 aria-hidden="true">Telehealth</h1>
 										</div>
 										<img
 											width="500"
 											height="500"
 											loading="lazy"
 											src="images/telehealth-thumbnail.png"
-											alt="Telehealth Thumbnail"
+											alt="Telehealth Project"
 										/>
 									</div>
 									<div class="card-text">
 										<div class="card-text-wrapper">
 											<div class="main">
+												<span class="sr-only">Tech Stack</span>
 												<ul class="tech-stack">
 													<li>HTML</li>
 													<li>CSS</li>
@@ -539,18 +546,19 @@
 													<li>Calendars</li>
 													<li>Contact Tagging</li>
 												</ul>
-												<h1 class="heading-sm">
+												<span class="sr-only">Job Title</span>
+												<h1 class="heading-sm" title="Job Title">
 													Strategic Automation, Funnel Design & Conversion
 													Optimization
 												</h1>
-												<p class="subtext-sm">
+												<span class="sr-only">Job Description</span>
+												<p class="subtext-sm" title="Job Description">
 													Designed and built custom marketing funnels and
 													websites using GHL's tools, enhancing layouts with
-													HTML/CSS for optimal UX. They automated lead
-													workflows, including forms, bookings, and email/SMS
-													sequences, streamlining lead nurturing with contact
-													tagging and pipeline automation. Their work also
-													involved customizing domain tracking and CRM
+													HTML/CSS for optimal UX. Automated lead workflows,
+													including forms, bookings, and email/SMS sequences,
+													streamlining lead nurturing with contact tagging and
+													pipeline automation. Customize domain tracking and CRM
 													segmentation, ultimately improving conversion rates
 													and marketing efficiency through strategic automation
 													and user-focused design.
@@ -562,6 +570,7 @@
 											</div>
 										</div>
 									</div>
+									<span class="sr-only">View project in new tab</span>
 								</div>
 							</a>
 						</div>
@@ -575,20 +584,21 @@
 								<div class="card row-reverse">
 									<div class="card-thumbnail">
 										<div class="card-thumbnail-backdrop">
-											<h1>Canwell</h1>
+											<h1 aria-hidden="true">Canwell</h1>
 										</div>
 										<img
 											width="500"
 											height="500"
 											loading="lazy"
 											src="images/canwell-thumbnail.png"
-											alt="Canwell Thumbnail"
+											alt="Canwell Project"
 										/>
 									</div>
 									<div class="card-text">
 										<div class="card-text-wrapper">
 											<div class="main">
-												<ul class="tech-stack">
+												<span class="sr-only">Tech tack</span>
+												<ul class="tech-stack" aria-label="Tech Stack">
 													<li>HTML</li>
 													<li>CSS</li>
 													<li>Javascript</li>
@@ -607,9 +617,11 @@
 													<li>Typescript</li>
 													<li>oAuth</li>
 												</ul>
+												<span class="sr-only">Job Title</span>
 												<h1 class="heading-sm">
 													Core Logic Optimization & Frontend Leadership
 												</h1>
+												<span class="sr-only">Job Description</span>
 												<p class="subtext-sm">
 													Improved core business logic for faster deployments
 													and fewer bugs while supporting a collaborative,
@@ -621,6 +633,7 @@
 												</p>
 											</div>
 											<div class="metrics">
+												<span class="sr-only">Metrics</span>
 												<div>
 													<h1 class="heading-sm">Over 30K</h1>
 													<p class="subtext-sm">
@@ -638,6 +651,7 @@
 											</div>
 										</div>
 									</div>
+									<span class="sr-only">View project in new tab</span>
 								</div>
 							</a>
 						</div>
@@ -651,19 +665,20 @@
 								<div class="card">
 									<div class="card-thumbnail">
 										<div class="card-thumbnail-backdrop">
-											<h1>My Portfolio</h1>
+											<h1 aria-hidden="true">My Portfolio</h1>
 										</div>
 										<img
 											width="500"
 											height="500"
 											loading="lazy"
 											src="images/portfolio-thumbnail.png"
-											alt="Portfolio Thumbnail"
+											alt="My Portfolio Project"
 										/>
 									</div>
 									<div class="card-text">
 										<div class="card-text-wrapper">
 											<div class="main">
+												<span class="sr-only">Tech Stack</span>
 												<ul class="tech-stack">
 													<li>HTML</li>
 													<li>CSS</li>
@@ -672,9 +687,11 @@
 													<li>Git/GitHub</li>
 													<li>React/Next JS</li>
 												</ul>
+												<span class="sr-only">Job Title</span>
 												<h1 class="heading-sm">
 													React & Next.js Developer | Crafting Engaging UI/UX
 												</h1>
+												<span class="sr-only">Job Description</span>
 												<p class="subtext-sm">
 													Building modern web experiences with a focus on
 													intuitive design and robust front-end development
@@ -687,6 +704,7 @@
 											</div>
 										</div>
 									</div>
+									<span class="sr-only">View project in new tab</span>
 								</div>
 							</a>
 						</div>
@@ -699,7 +717,11 @@
 						<div class="inner">
 							<div class="item tooltip">
 								<div class="tooltip-text">See Company</div>
-								<a href="https://www.codesquirrel.com.au/" target="_blank">
+								<a
+									aria-label="Company Name: Code Squirrel"
+									href="https://www.codesquirrel.com.au/"
+									target="_blank"
+								>
 									<img
 										loading="lazy"
 										src="images/code-squirrel-logo.png"
@@ -711,7 +733,11 @@
 							</div>
 							<div class="item tooltip">
 								<div class="tooltip-text">See Company</div>
-								<a href="https://canwell.com.au/" target="_blank">
+								<a
+									aria-label="Company Name: Canwell"
+									href="https://canwell.com.au/"
+									target="_blank"
+								>
 									<svg
 										width="160"
 										height="50"
@@ -816,7 +842,11 @@
 							</div>
 							<div class="item tooltip">
 								<div class="tooltip-text">See Company</div>
-								<a href="https://www.joinhoney.com/" target="_blank">
+								<a
+									aria-label="Company Name: PayPal Honey"
+									href="https://www.joinhoney.com/"
+									target="_blank"
+								>
 									<svg
 										width="192"
 										height="64"
@@ -908,7 +938,11 @@
 							</div>
 							<div class="item tooltip">
 								<div class="tooltip-text">See Company</div>
-								<a href="https://awesomecx.transcom.com/" target="_blank">
+								<a
+									aria-label="Company Name: Transcom"
+									href="https://awesomecx.transcom.com/"
+									target="_blank"
+								>
 									<img
 										src="images/transcom-logo.svg"
 										width="160"
@@ -921,7 +955,11 @@
 							</div>
 							<div class="item tooltip">
 								<div class="tooltip-text">See Company</div>
-								<a href="https://www.flatworldsolutions.com/" target="_blank">
+								<a
+									aria-label="Company Name: Flatworld Solutions"
+									href="https://www.flatworldsolutions.com/"
+									target="_blank"
+								>
 									<img
 										width="160"
 										height="50"
@@ -950,7 +988,7 @@
 					<div class="description">
 						<div>
 							<h1
-								class="heading-md"
+								class="heading-sm"
 								style="font-weight: 500; margin-bottom: 1rem"
 							>
 								Hi, I'm Rogene!
@@ -970,14 +1008,17 @@
 							</p>
 						</div>
 						<div>
-							<a href="mailto:rcvioleta13@gmail.com" class="btn btn-secondary"
+							<a
+								aria-label="Click to contact me via E-mail"
+								href="mailto:rcvioleta13@gmail.com"
+								class="btn btn-secondary"
 								>Contact Me</a
 							>
 						</div>
 					</div>
 				</section>
 				<div class="copyright w-full">
-					<p class="subtext-xs">
+					<p class="subtext-sm">
 						Copyright&copy;2025 Rogene Cris Violeta. All rights reserved.
 					</p>
 				</div>

@@ -6,26 +6,24 @@
 	--16px-in-rem: 1.008rem;
 	--14px-in-rem: 0.882rem;
 
-	/* Typography */
-	--text-display-1: 4.032rem; /* 64px */
-	--text-display-2: 3.024rem; /* 48px */
+	/* Responsive Font Size */
+	--text-xs: clamp(0.75rem, 0.6966rem + 0.2034vw, 0.9rem);
+	--text-sm: clamp(0.9375rem, 0.774rem + 0.226vw, 1rem);
+	--text-base: clamp(1rem, 0.9288rem + 0.2712vw, 1.2rem);
+	--text-lg: clamp(1.125rem, 1.0449rem + 0.3051vw, 1.35rem);
+	--text-xl: clamp(1.25rem, 1.161rem + 0.339vw, 1.5rem);
+	--text-2xl: clamp(1.5rem, 1.3932rem + 0.4068vw, 1.8rem);
+	--text-3xl: clamp(1.875rem, 1.7415rem + 0.5085vw, 2.25rem);
+	--text-4xl: clamp(2.25rem, 2.0898rem + 0.6102vw, 2.7rem);
+	--text-5xl: clamp(3rem, 2.7864rem + 0.8136vw, 3.6rem);
+	--text-6xl: clamp(3.75rem, 3.4831rem + 1.0169vw, 4.5rem);
+	--text-7xl: clamp(4.5rem, 4.1797rem + 1.2203vw, 5.4rem);
+	--text-8xl: clamp(6rem, 5.5729rem + 1.6271vw, 7.2rem);
+	--text-9xl: clamp(8rem, 7.4305rem + 2.1695vw, 9.6rem);
 
-	--text-h1: 2.268rem; /* 36px */
-	--text-h2: 1.89rem; /* 30px */
-	--text-h3: 1.512rem; /* 24px */
-	--text-h4: 1.26rem; /* 20px */
-
-	--text-lg: 1.134rem; /* 18px */
-	--text-base: var(--16px-in-rem); /* 16px */
-	--text-sm: var(--14px-in-rem); /* 14px */
-	--text-xm: 0.756rem; /* 12px */
-
-	--btn-text-lg: var(--16px-in-rem); /* 16px */
-	--btn-text-base: var(--14px-in-rem); /* 14px */
-
-	--nav-link-text-lg: var(--16px-in-rem); /* 16px */
-	--nav-link-text-base: var(--14px-in-rem); /* 14px */
-
+	/* Letter spacing factor*/
+	--letter-spacing-factor-x: -0.025;
+	--letter-spacing-factor-xx: -0.05;
 	--subtext-line-height: 1.35;
 
 	--card-border-radius: 1rem;
@@ -140,7 +138,9 @@ p {
 
 .social-content ul > li {
 	display: block;
-	font-size: var(--text-h3);
+	font-size: var(--text-2xl);
+	line-height: calc(1.75 / 1.125);
+	letter-spacing: calc(var(--text-lg) * var(--letter-spacing-factor-x));
 }
 
 .social-content ul > li.text {
@@ -207,7 +207,6 @@ p {
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-end;
-	height: 10dvh;
 	gap: 0.35rem;
 	opacity: 1;
 }
@@ -238,18 +237,20 @@ p {
 }
 
 .hero > .inner > .content > .left > .hero-top-proof > .pitch-experience {
-	font-weight: 700;
-	font-size: clamp(var(--14px-in-rem), 0.774rem + 0.226vw, var(--16px-in-rem));
+	font-weight: 600;
+	font-size: var(--text-sm);
 	color: var(--tertiary-light);
 }
 
 .hero > .inner > .content > .left > .heading-lg {
 	margin-top: var(--space-20);
+	font-weight: 700;
+	max-width: 43.75rem;
 }
 
 .hero > .inner > .content > .left > .subtext-md {
 	margin-top: var(--space-20);
-	max-width: 38.125rem;
+	max-width: 31.25rem;
 }
 
 .hero .cta-container {
@@ -452,7 +453,7 @@ p {
 	padding: min(var(--space-32), 5%);
 	box-sizing: border-box;
 	justify-content: space-between;
-	gap: var(--space-32);
+	gap: var(--space-16);
 }
 
 .projects .card-text-wrapper > .main {
@@ -476,7 +477,7 @@ p {
 	background-color: var(--secondary-500);
 	color: var(--secondary-100);
 	font-weight: 500;
-	font-size: var(--text-xm);
+	font-size: var(--text-xs);
 	padding: 0.25rem 0.75rem;
 	border-radius: 1rem;
 	margin: 0.25rem 0;
@@ -484,12 +485,12 @@ p {
 }
 
 .projects .card-text-wrapper > .main > .heading-sm {
-	margin-top: var(--space-32);
+	margin-top: var(--space-16);
 	font-weight: 700;
 }
 
 .projects .card-text-wrapper > .main > .subtext-sm {
-	margin-top: var(--space-16);
+	margin-top: var(--space-8);
 }
 
 .projects .card-text-wrapper > .metrics {
@@ -498,7 +499,7 @@ p {
 	justify-content: center;
 	align-items: flex-start;
 	height: 100%;
-	gap: var(--space-32);
+	gap: var(--space-16);
 }
 
 .projects .card-text-wrapper > .metrics > div {
@@ -507,7 +508,7 @@ p {
 
 .projects .card-text-wrapper > .metrics .heading-sm {
 	font-weight: 700;
-	margin-bottom: var(--space-16);
+	margin-bottom: var(--space-8);
 }
 
 .footer-wrapper {
@@ -565,8 +566,8 @@ p {
 	user-select: none;
 	cursor: pointer;
 	padding: 0.875rem 1.875rem 0.688rem;
-	font-size: clamp(var(--text-sm), 0.774rem + 0.226vw, var(--text-base));
-	font-weight: 700;
+	font-size: var(--text-base);
+	font-weight: 600;
 	position: relative;
 	display: inline-block;
 	line-height: 1.5;
@@ -597,61 +598,70 @@ p {
 }
 
 .emphasize-text {
-	font-weight: bold;
-	color: var(--secondary-500);
-	text-shadow: var(--secondary-200) 2px 2px 1px;
+	font-weight: 600;
+	color: var(--secondary-100);
+	text-shadow: var(--secondary-900) 0px 0px 3px;
 }
 
 .heading-lg {
 	font-weight: normal;
-	font-size: clamp(var(--text-h2), 2.322rem + 0.678vw, var(--text-display-2));
-	line-height: calc(2 / 1.89);
+	font-size: var(--text-5xl);
+	line-height: 1;
+	letter-spacing: calc(var(--text-5xl) * var(--letter-spacing-factor-xx));
 	color: var(--secondary-600);
-	letter-spacing: -0.045em;
 }
 
 .heading-md {
 	font-weight: normal;
-	font-size: clamp(var(--text-h4), 1.1703rem + 0.3417vw, var(--text-h3));
-	line-height: calc(1.75 / 1.26);
+	font-size: var(--text-3xl);
+	line-height: calc(2.25 / 1.875);
+	letter-spacing: calc(var(--text-3xl) * var(--letter-spacing-factor-xx));
 	color: var(--secondary-600);
-	letter-spacing: -0.025em;
 }
 
 .heading-sm {
 	font-weight: normal;
-	font-size: clamp(var(--text-lg), 0.9753rem + 0.2847vw, var(--text-h4));
-	line-height: calc(1.5 / 1.134);
+	font-size: var(--text-xl);
+	line-height: calc(1.75 / 1.25);
+	letter-spacing: calc(var(--text-xl) * var(--letter-spacing-factor-x));
 	color: var(--secondary-600);
-	letter-spacing: -0.025em;
 }
 
 .subtext-lg {
-	font-size: clamp(var(--text-lg), 0.9753rem + 0.2847vw, var(--text-h4));
+	font-size: var(--text-lg);
+	line-height: calc(1.75 / 1.125);
+	letter-spacing: calc(var(--text-lg) * var(--letter-spacing-factor-x));
 	font-weight: normal;
-	line-height: calc(1.75 / 1.134);
 	color: var(--secondary-400);
 }
 
 .subtext-md {
-	font-size: clamp(var(--text-base), 0.8708rem + 0.2542vw, var(--text-lg));
+	font-size: var(--text-base);
+	line-height: calc(1.5 / 1);
 	font-weight: normal;
-	line-height: calc(1.5 / 1.008);
 	color: var(--secondary-400);
 }
 
 .subtext-sm {
-	font-size: clamp(var(--text-sm), 0.774rem + 0.226vw, var(--text-base));
+	font-size: var(--text-sm);
 	font-weight: normal;
-	line-height: calc(1.25 / 0.882);
+	line-height: calc(1.25 / 0.875);
 	color: var(--secondary-400);
 }
 
 .subtext-xs {
-	font-size: clamp(var(--text-xm), 0.6773rem + 0.1977vw, var(--text-sm));
+	font-size: var(--text-xs);
+	line-height: calc(1 / 0.75);
 	font-weight: normal;
-	line-height: calc(1 / 0.756);
 	color: var(--secondary-400);
+}
+
+.text-5xl {
+	font-size: var(--text-5xl) !important;
+	line-height: 1 !important;
+	letter-spacing: calc(
+		var(--text-5xl) * var(--letter-spacing-factor-xx)
+	) !important;
 }
 
 .tooltip {
@@ -737,7 +747,9 @@ p {
 	.social-content ul > li.text {
 		display: block;
 		font-weight: 700;
-		font-size: var(--14px-in-rem);
+		font-size: var(--text-2xl);
+		line-height: calc(1.75 / 1.125);
+		letter-spacing: calc(var(--text-lg) * var(--letter-spacing-factor-x));
 		color: var(--tertiary-light);
 	}
 
