@@ -908,120 +908,150 @@
 			"answers": ["The survey data may come back with missing information"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of setting up a workflow for survey submissions?",
+			"answers": [
+				"To facilitate discussion, learning, networking, and knowledge sharing"
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of the client-facing portal discussed in the video?",
+			"answers": ["To provide a link for customers to log-in or sign-up."]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the primary function of the affiliate manager portal in the community login?",
+			"answers": [
+				"To facilitate discussions and learning among community members"
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Which user roles have the ability to create new channels within a group?",
+			"answers": ["Admins"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "In a group, which roles can approve or decline membership requests? (Select all that apply)",
+			"answers": ["Admins"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What happens when a group is archived?",
+			"answers": ["All members are automatically removed"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of reputation management in the system",
+			"answers": [
+				"To manage and improve online reviews improve SEO rankings and keep business content new and relevant"
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "How can users customize the review widget's appearance?",
+			"answers": [
+				"By selecting customizable options within the reputation management tab, located in the sub-account settings."
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "How can you customize the messaging for email and SMS review requests?",
+			"answers": [
+				"By enabling the respective options and editing the copy and messaging in the reputation settings section"
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the prerequisite for accessing notification settings, as demonstrated in the video?",
+			"answers": [
+				"Being a user within that sub-account, or being 'logged in' as the user within the sub-account"
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "How does configuring user profile notifications contribute to workflow management?",
+			"answers": [
+				"It can reduce the number of internal notifications needed for day to day communications."
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Why is the LC Trust Center necessary?",
+			"answers": ["To crack down on spam/robo calls & scams"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Who is eligible to use the LeadConnector Trust Center?",
+			"answers": ["Sub-accounts who use LeadConnector telephony service"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the initial step to access the Trust Center?",
+			"answers": ["Verify the business profile"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "Why is it important to use a custom domain for email sending?",
+			"answers": [
+				"Unlike a shared domain, it provides a dedicated sending domain.",
+				"It provides better email deliverability (one of many factors)",
+				"Custom domains help establish brand identity"
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What should you consider when sending emails from a brand-new domain?",
+			"answers": ["New domains require time for propagation and domain warmup"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What happens during the propagation period for DNS records?",
+			"answers": ["DNS records may take time to update across the internet"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of the reply and forward settings discussed in the video?",
+			"answers": ["To manage the forwarding and reply-to email addresses"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "How can forwarding addresses be added to the email inbox?",
+			"answers": ["By entering them in the email settings"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What happens when an email is replied to using the reply address set in the settings?",
+			"answers": ["The reply is sent to the specified email address only"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "How can users access SMS compliance customization settings?",
+			"answers": ["In the sub-account's settings"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What are some keywords that can be used in the opt-out message?",
+			"answers": ["Stop, stop all, unsubscribe, cancel, end"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the purpose of including sender information in SMS messages?",
+			"answers": [
+				"To increase message deliverability and comply with regulatory bodies"
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the primary purpose of unsubscribed links in email communication?",
+			"answers": [
+				"To provide recipients with the option to opt out of receiving emails"
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What are the potential consequences of not complying with email regulations?",
+			"answers": ["Account suspension"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "How can users customize the messaging for unsubscribed links when using the default LC email feature?",
+			"answers": [
+				"By editing the messaging in the business settings within the sub-account"
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the primary purpose of trigger links in email campaigns?",
+			"answers": ["To track user interactions (clicks) with emails"]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "What is the benefit of using goal events for trigger link clicks in workflows?",
+			"answers": [
+				"It allows for conditional actions based on user interactions (clicks)"
+			]
 		},
 		{
-			"question": "",
-			"answers": [""]
+			"question": "In the tutorial, what is the reason for creating multiple trigger links for different campaigns?",
+			"answers": [
+				"To increase email open rates",
+				"To segment users based on their email preferences",
+				"To prevent users from unsubscribing to from all outbound email"
+			]
 		},
 		{
 			"question": "",
