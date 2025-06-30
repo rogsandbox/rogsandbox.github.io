@@ -805,7 +805,7 @@ p {
 
 	.projects .card {
 		flex-direction: row;
-		gap: var(--space-40);
+		gap: var(--space-20);
 		min-height: 18.75rem;
 	}
 
