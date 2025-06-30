@@ -670,7 +670,7 @@ p {
 	width: max-content;
 	background-color: var(--tertiary-dark);
 	color: var(--primary-dark);
-	font-size: var(--14px-in-rem);
+	font-size: var(--text-xs);
 	text-align: center;
 	padding: 0.4rem 0.75rem;
 	border-radius: 0.5rem;
@@ -787,6 +787,11 @@ p {
 
 	.features.w-full > .inner {
 		grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
+	}
+
+	.companies > .container > .inner > .item,
+	.projects > .inner > .item {
+		overflow: visible;
 	}
 
 	.companies > .container > .inner {
