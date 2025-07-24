@@ -209,6 +209,11 @@ body {
 	row-gap: var(--rowGap);
 }
 
+.companies .item img {
+	max-width: 160px;
+	height: auto;
+}
+
 .features > .inner {
 	padding: 128px 0;
 	display: grid;
@@ -573,6 +578,11 @@ body {
 
 	.hero > .inner > .content > .hero-graphic {
 		display: flex;
+	}
+
+	.companies .item img {
+		max-width: 200px;
+		height: 40px;
 	}
 
 	.feature-column.feature-cards {
