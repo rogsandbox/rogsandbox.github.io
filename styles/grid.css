@@ -1,0 +1,39 @@
+.column-layout {
+	--gridColGap: 0rem;
+	--gridRowGap: 1rem;
+
+	display: grid;
+	align-items: flex-start;
+	row-gap: var(--gridRowGap);
+	column-gap: var(--gridColGap);
+}
+
+.company-logo-grid {
+	--gridColGap: 0rem;
+	--gridRowGap: 1rem;
+
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	row-gap: var(--gridRowGap);
+	column-gap: var(--gridColGap);
+}
+
+/* Small tablets (≥ 600px) */
+@media (min-width: 37.5rem) {
+	.column-layout[data-columns="2,2"] {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* Tablets (≥ 768px) */
+@media (min-width: 48rem) {
+}
+
+/* Laptops/desktops (≥ 1024px) */
+@media (min-width: 64rem) {
+}
+
+/* Large screens (≥ 1280px) */
+@media (min-width: 80rem) {
+}
