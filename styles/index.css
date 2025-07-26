@@ -80,6 +80,21 @@ body {
 	color: var(--neutral-700);
 }
 
+.highlight-text {
+	background-image: linear-gradient(
+		to right,
+		#14405e,
+		#3e637d,
+		var(--accent-500),
+		#3e637d,
+		#14405e
+	);
+	background-size: 200%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 .hero {
 	position: relative;
 	padding: 15px;
