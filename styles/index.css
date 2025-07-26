@@ -155,7 +155,7 @@ body {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	gap: 16px;
+	gap: 32px;
 }
 
 .hero-cta-subtitle {
@@ -169,11 +169,11 @@ body {
 	align-items: center;
 	margin: 0 auto;
 	padding: 50.5px 15px 101px;
-	row-gap: var(--rowGap);
+	gap: var(--rowGap);
 }
 
 .companies .item img {
-	max-width: 160px;
+	max-width: 156px;
 	height: auto;
 }
 
@@ -565,8 +565,8 @@ body {
 	}
 
 	.companies .item img {
-		max-width: 200px;
-		height: 40px;
+		max-width: 156px;
+		height: 52px;
 	}
 
 	.feature-column.feature-cards {
