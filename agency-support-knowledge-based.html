@@ -204,7 +204,7 @@
 							type="text"
 							name="search"
 							autocomplete="off"
-							placeholder="Search Questions"
+							placeholder="Search: Articles, FAQs, Tutorials"
 						/>
 						<button type="button" class="clear-search">X</button>
 					</div>
@@ -217,8 +217,10 @@
 
 		<script defer>
 			document.addEventListener("DOMContentLoaded", async (e) => {
-				const FILE_PATH = "./data/data.json";
-				const { data: articles } = await getArticles(FILE_PATH);
+				// const FILE_PATH = "./data/data.json";
+				// const { data: articles } = await getArticles(FILE_PATH);
+				const articles = await getArticles();
+				// console.log("articles", articles);
 
 				const input = document.querySelector(
 					'.search__wrapper > input[type="text"]'
@@ -238,39 +240,55 @@
 
 					clearSearch.classList.add("active");
 
-					const filteredQuestions = articles.filter(({ question }) =>
-						question.toLowerCase().includes(search)
-					);
+					const filteredArticles = articles.filter((article, index) => {
+						const title = article[0]?.toLowerCase();
+
+						if (index <= 0 || !title) {
+							return false;
+						}
+
+						return title.includes(search);
+					});
+
+					// console.log("filteredArticles", filteredArticles);
 
 					// remove all list
 					removeNodes(articleList.childNodes);
 
-					if (filteredQuestions.length <= 0) {
+					if (filteredArticles.length <= 0) {
 						const list = document.createElement("li");
 						list.textContent = "No article found";
 						articleList.insertAdjacentElement("afterbegin", list);
 						return;
 					}
 
-					filteredQuestions.forEach((fq) => {
+					filteredArticles.forEach((fa) => {
+						const title = fa[0] ?? "";
+						const descriptions = (fa[1] ?? "")
+							.split(",")
+							.map((desc) => desc.trim());
+						const iframeSrc = fa[2];
+
+						console.log("filters", { title, descriptions, iframeSrc });
+
 						const list = document.createElement("li");
 						const ul = document.createElement("ul");
 						list.classList.add("article__section_list_item");
-						list.textContent = `${fq.question}: `;
+						list.textContent = title;
 
-						fq.answers.forEach((answer) => {
+						descriptions.forEach((desc) => {
 							const li = document.createElement("li");
-							li.textContent = answer;
+							li.textContent = desc;
 							ul.appendChild(li);
 						});
 
 						list.appendChild(ul);
 
-						if (fq.iframe.length !== 0) {
+						if (iframeSrc) {
 							const btn = document.createElement("button");
 							btn.classList.add("view-iframe-btn");
 							btn.textContent = "View Document";
-							btn.dataset.iframeSrc = fq.iframe;
+							btn.dataset.iframeSrc = iframeSrc;
 							btn.onclick = viewDocument;
 							list.appendChild(btn);
 						}
@@ -358,16 +376,34 @@
 					};
 				}
 
-				async function getArticles(file) {
-					const res = await fetch(FILE_PATH);
+				// async function getArticles(file) {
+				// 	const res = await fetch(FILE_PATH);
 
-					return await res.json();
-				}
+				// 	return await res.json();
+				// }
 
 				function removeNodes(nodes) {
 					while (nodes.length !== 0) {
 						const child = nodes[0];
 						child.parentNode.removeChild(child);
+					}
+				}
+
+				async function getArticles() {
+					const sheetId = "11aPDLBt1YQtzGdvJNZ9AQneRewEUlNKxAR56mllWDt0";
+					const apiKey = "AIzaSyARq4dazEOfonecrYd85jexLVuaI2QqRZo";
+					const sheetName = "Sheet1";
+					const range = "A1:C";
+					const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${sheetName}!${range}?key=${apiKey}`;
+
+					try {
+						const res = await fetch(url);
+						const data = await res.json();
+
+						return data.values;
+					} catch (err) {
+						console.error("Error fetching sheet:", err);
+						return [];
 					}
 				}
 			});
