@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>GHL Quiz</title>
+		<title>Agency Support | Knowledge-Based</title>
 		<style>
 			@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
@@ -37,7 +37,7 @@
 				position: relative;
 				width: 100%;
 				box-sizing: border-box;
-				/* display: f; */
+				margin-bottom: 32px;
 			}
 
 			.clear-search {
@@ -49,8 +49,8 @@
 				background-color: #fc5252;
 				color: #ffffff;
 				width: 25px;
-				height: 25px;
-				border-radius: 0.25rem;
+				height: auto;
+				border-radius: 999px;
 				font-weight: 600;
 				padding: 0.15rem 0.5rem;
 				cursor: pointer;
@@ -66,7 +66,8 @@
 				width: 100%;
 				font-size: 1rem;
 				padding: 1rem 1.25rem;
-				border: 1px solid #656565;
+				border: 1px solid #262626;
+				border-radius: 999px;
 			}
 
 			.search-form input[name="search"]:focus {
@@ -84,13 +85,18 @@
 				font-size: clamp(0.875rem, 0.774rem + 0.226vw, 1rem);
 				background-color: #f1f1f1;
 				padding: 1rem;
-				margin-top: 0.75rem;
+				/* margin-top: 0.75rem; */
 				color: #292929;
-				box-shadow: 0px 0px 1px #656565;
+				box-shadow: 0px 0px 1px #262626;
+			}
+
+			ul.article__section_list
+				> .article__section_list_item:not(:last-of-type) {
+				margin-bottom: 32px;
 			}
 
 			.article__section_list_item > ul {
-				margin: 0.85rem 0 0 0;
+				margin-top: 16px;
 				padding-left: 1.75rem;
 			}
 
@@ -104,6 +110,81 @@
 				margin-bottom: 0.5rem;
 			}
 
+			.view-iframe-btn {
+				margin-top: 32px;
+				background-color: #262626;
+				font-weight: 600;
+				color: #fff;
+				border: none;
+				padding: 8px 16px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			.iframe-wrapper {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				display: none;
+				background-color: #262626;
+			}
+
+			.iframe-wrapper > iframe {
+				width: 40%;
+				max-width: 100%;
+				height: 100%;
+				border: none;
+			}
+
+			.iframe-wrapper.active {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				animation: show-animation 0.3s forwards;
+			}
+
+			.iframe-wrapper.closing {
+				animation: hide-animation 0.3s forwards;
+			}
+
+			.iframe-wrapper.active button.close-iframe {
+				border-radius: 999px;
+				font-weight: 700;
+				font-size: 22px;
+				cursor: pointer;
+				width: 50px;
+				height: 52.5px;
+				background-color: #fc5252;
+				color: #fff;
+				border: none;
+				margin: 16px 0;
+			}
+
+			@keyframes show-animation {
+				from {
+					transform: translateY(100%);
+					opacity: 0.5;
+				}
+				to {
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+
+			@keyframes hide-animation {
+				from {
+					transform: translateY(0);
+					opacity: 1;
+				}
+				to {
+					transform: translateY(100%);
+					opacity: 0.5;
+				}
+			}
+
 			@media screen and (min-width: 750px) {
 				#app {
 					width: 50%;
@@ -114,7 +195,7 @@
 	<body>
 		<div id="app">
 			<section class="search-form">
-				<form onsubmit="e => e.target.preventDefault();">
+				<form onsubmit="return false;">
 					<div class="search__wrapper">
 						<input
 							type="text"
@@ -140,6 +221,7 @@
 					'.search__wrapper > input[type="text"]'
 				);
 				const clearSearch = document.querySelector(".clear-search");
+				const iframeContainer = document.querySelector(".iframe-container");
 				const articleList = document.querySelector(".article__section_list");
 
 				const handleKeydown = debounce((e) => {
@@ -181,6 +263,15 @@
 
 						list.appendChild(ul);
 
+						if (fq.iframe.length !== 0) {
+							const btn = document.createElement("button");
+							btn.classList.add("view-iframe-btn");
+							btn.textContent = "View Document";
+							btn.dataset.iframeSrc = fq.iframe;
+							btn.onclick = viewDocument;
+							list.appendChild(btn);
+						}
+
 						articleList.insertAdjacentElement("afterbegin", list);
 					});
 				});
@@ -192,6 +283,65 @@
 					input.value = "";
 					input.focus();
 				});
+
+				function viewDocument(_e) {
+					const root = this.parentNode;
+					const iframeContainer = root.querySelector("iframe-wrapper");
+
+					document.body.style.overflow = "hidden";
+
+					if (!iframeContainer) {
+						const wrapper = document.createElement("div");
+						const closeBtn = document.createElement("button");
+						const iframe = document.createElement("iframe");
+
+						iframe.src = this.dataset["iframeSrc"];
+						closeBtn.classList.add("close-iframe");
+						closeBtn.textContent = "X";
+						closeBtn.onclick = handleCloseIframe;
+						wrapper.classList.add("iframe-wrapper", "active");
+
+						wrapper.appendChild(closeBtn);
+						wrapper.appendChild(iframe);
+						root.appendChild(wrapper);
+
+						wrapper.addEventListener("animationend", handleShowAnimation, {
+							once: true,
+						});
+
+						return;
+					}
+
+					iframeContainer.classList.add("active");
+					iframeContainer.addEventListener(
+						"animationend",
+						handleShowAnimation,
+						{ once: true }
+					);
+				}
+
+				function handleShowAnimation(_e) {
+					this.removeEventListener("animationend", handleShowAnimation);
+					document.body.style.overflow = "";
+				}
+
+				function handleCloseIframe() {
+					const parent = this.parentNode;
+
+					parent.classList.add("closing");
+					document.body.style.overflow = "hidden";
+
+					parent.addEventListener(
+						"animationend",
+						function handleClose(_e) {
+							this.classList.remove("closing");
+							parent.classList.remove("active");
+							document.body.style.overflow = "";
+							this.removeEventListener("animationend", handleClose);
+						},
+						{ once: true }
+					);
+				}
 
 				function debounce(closure, timeout = 500) {
 					let timer;
