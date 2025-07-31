@@ -1,0 +1,1229 @@
+{
+	"data": [
+		{
+			"question": "",
+			"answers": [""],
+			"iframe": ""
+		},
+		{
+			"question": "",
+			"answers": [""],
+			"iframe": ""
+		},
+		{
+			"question": "",
+			"answers": [""],
+			"iframe": ""
+		},
+		{
+			"question": "Which tab should you navigate to create a workflow for the web chat widget?",
+			"answers": ["Automations"],
+			"iframe": ""
+		},
+		{
+			"question": "What trigger should you select for the workflow for web chat widget?",
+			"answers": ["Customer replied"],
+			"iframe": ""
+		},
+		{
+			"question": "What information can be passed on to the user in the notification?",
+			"answers": ["Name", "Mobile Number", "Message", "Email"],
+			"iframe": ""
+		},
+		{
+			"question": "What 'action' in the workflow allows you to send an information to a user?",
+			"answers": ["Internal Notification"],
+			"iframe": ""
+		},
+		{
+			"question": "When using the internal notification, which pages can be specified for the redirect when a user clicks on a the app notification?",
+			"answers": ["Contact record", "Conversations view", "Opportunity Page"],
+			"iframe": ""
+		},
+		{
+			"question": "How can you access additional payment gateways like NMI and authorized.net?",
+			"answers": [
+				"Within the Payments section and Integrations tab located in the sub-account settings"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "Which integration allows you to enable Google & Apple Pay?",
+			"answers": ["Stripe Connect"],
+			"iframe": ""
+		},
+		{
+			"question": "What does the Google account integration in the settings allow you to do?",
+			"answers": [
+				"Access Google Analytics, Google My Business data, and calendar sync integration"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of the QuickBooks integration?",
+			"answers": ["To send review links to paid invoices"],
+			"iframe": ""
+		},
+		{
+			"question": "Where can you submit ideas for platform and integration improvements?",
+			"answers": ["At ideas.gohighlevel.com"],
+			"iframe": ""
+		},
+		{
+			"question": "What are the two types of audit logs mentioned in the video?",
+			"answers": ["Agency audit logs and Sub-account audit logs"],
+			"iframe": ""
+		},
+		{
+			"question": "Where can you find the audit logs in the system?",
+			"answers": ["Within the Sub-Account Settings"],
+			"iframe": ""
+		},
+		{
+			"question": "How far back in time can you view the audit logs?",
+			"answers": ["Up to 60 days"],
+			"iframe": ""
+		},
+		{
+			"question": "Is it possible to restore deleted items using the audit logs?",
+			"answers": ["Yes, it depends on the action and its limitations."],
+			"iframe": ""
+		},
+		{
+			"question": "Where can you access the template library in the app?",
+			"answers": [
+				"Blogs",
+				"Website Builder",
+				"Email Builder",
+				"Social Planner"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "How can the template library be enabled for sub accounts?",
+			"answers": ["It can be enabled in the Agency Settings."],
+			"iframe": ""
+		},
+		{
+			"question": "What difference is there between an agency user and a sub account user when importing a template?",
+			"answers": [
+				"The agency user sees a GoHighLevel warning notice while the sub account user sees the agency's name."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "How can you check if a user is a sub account user?",
+			"answers": [
+				"Check the user's profile in the app within the settings > staff tab"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the difference between a custom value and a custom field?",
+			"answers": [
+				"Custom values are global fields, while custom fields are contact dependent."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "Can custom values be different for each contact or lead?",
+			"answers": ["No, custom values are the same for all contacts and leads."],
+			"iframe": ""
+		},
+		{
+			"question": "How can custom values be utilized in marketing campaigns?",
+			"answers": [
+				"To dynamically insert standardized information across campaign assets/ collateral."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What does the 'Enable Email Signatures' option allow users to do?",
+			"answers": [
+				"Append an email signature to all outgoing messages",
+				"Include the signature before quoted text in replies",
+				"Add an image to the email signature"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "Where can you enable/disable the visibility of the Dashboard Stats for the user?",
+			"answers": ["User permissions"],
+			"iframe": ""
+		},
+		{
+			"question": "Which role has the permission to create new sub-accounts?",
+			"answers": ["Admin"],
+			"iframe": ""
+		},
+		{
+			"question": "When would you typically need to reassign leads from one user to another?",
+			"answers": ["When a user departs from the sub-account"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the primary purpose of creating a workflow to move leads?",
+			"answers": [
+				"To facilitate bulk lead assignment between users and ensure that no leads fall through the cracks."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What must be done before removing a user from the sub-account?",
+			"answers": ["Reassign the leads from that user to another user"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of marking messages as 'unread'? (Via workflows or manually)",
+			"answers": ["To highlight important messages"],
+			"iframe": ""
+		},
+		{
+			"question": "How can contacts be marked as 'starred'?",
+			"answers": ["By clicking the star icon in the conversation thread"],
+			"iframe": ""
+		},
+		{
+			"question": "What caution is given about deleting conversation threads?",
+			"answers": ["Deleted threads cannot be recovered"],
+			"iframe": ""
+		},
+		{
+			"question": "What feature allows users to access detailed contact information from the Conversations tab?",
+			"answers": ["Clicking on the contact's name or card"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the main purpose of using SMS and email templates in the system?",
+			"answers": [
+				"To ensure consistent messaging from user across interactions"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of adding custom values to templates?",
+			"answers": [
+				"To efficiently update message information across the system where the template is utilized."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "When sending SMS messages, what happens if the character count exceeds a certain threshold?",
+			"answers": [
+				"The message will be sent in multiple segments (separate messages)"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "To bring in human touch points when necessary",
+			"answers": [
+				"To bring in human touch points when necessary",
+				"Time-sensitive tasks",
+				"Approval processes"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "Which of the following is NOT a requirement for manual call and SMS actions to work?",
+			"answers": ["Being on a specific subscription plan"],
+			"iframe": ""
+		},
+		{
+			"question": "How can you handle different outcomes from manual call actions?",
+			"answers": [
+				"Use branching to create separate actions for different outcomes"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "Which parameter determines how soon an appointment can be scheduled?",
+			"answers": ["Minimum scheduling notice"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the benefit of assigning leads to specific agents in a round-robin calendar?",
+			"answers": [
+				"It avoids duplicate bookings.",
+				"It automatically distributes leads based on the calendar settings.",
+				"It ensures that leads get the time they want or allows them to select the staff member of their choice."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What are the two types of scheduling/share links that are provided for a calendar? (3 Dot dropdown options)",
+			"answers": ["Permanent and Scheduling link"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the primary purpose of assigning a specific calendar link to a user?",
+			"answers": [
+				"To ensure that the lead receives a link to the user's calendar to whom they are assigned."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "How can a sales agent's/ Users calendar link be included in a outbound message?",
+			"answers": ["By adding in the message body"],
+			"iframe": ""
+		},
+		{
+			"question": "What should be considered when using automation to send user-specific calendar links?",
+			"answers": ["Leads must be assigned to the correct sales agent (user)"],
+			"iframe": ""
+		},
+		{
+			"question": "What happens if a lead is not properly assigned to a sales agent (user) when using automation with user-specific calendar links?",
+			"answers": [
+				"The lead will not receive any calendar link. The message body where the link is will be blank."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the primary purpose of setting up triggers for different calendar types?",
+			"answers": [
+				"To automate messaging and appointment-related actions, by ensuring that the trigger only fires when it should."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the significance of specifying 'recurring event type' as a trigger filter within a workflow?",
+			"answers": [
+				"It ensures the trigger is fired only for recurring appointments"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the essential requirement for the 'confirmed' appointment status trigger?",
+			"answers": [
+				"It ensures the system looks for a specific 'status' in the appointment trigger"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "How can 'non-confirmed' appointments statuses trigger/fire a workflow?",
+			"answers": [
+				"By using the 'new' status filter for the 'appointment status trigger.'"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of the 'Calendars and Appointments' tab?",
+			"answers": [
+				"To provide a way to see each users calenders and appointments",
+				"To show a daily, weekly or monthly overview of appointments and calendars",
+				"To display daily appointments only",
+				"To highlight past appointments"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "How can you integrate your calendar into the system?",
+			"answers": ["By connecting your Google and or Outlook calendar"],
+			"iframe": ""
+		},
+		{
+			"question": "What does an appointment marked as 'unconfirmed' mean?",
+			"answers": ["It requires manual confirmation by the user"],
+			"iframe": ""
+		},
+		{
+			"question": "What is one of the prerequisites mentioned for using appointment booking features?",
+			"answers": ["Creating a calendar widget and workflows for reminders"],
+			"iframe": ""
+		},
+		{
+			"question": "How can users book an appointment on behalf of a contact from within a conversation?",
+			"answers": [
+				"By clicking the 'Book Appointment' button in the conversation preview or within the appointment tab"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "How can appointment status triggers be utilized in automation workflows?",
+			"answers": [
+				"To initiate follow-up actions based on appointment status changes"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "How can you change the starting day of the week on your calendar?",
+			"answers": ["Through account calendar preferences"],
+			"iframe": ""
+		},
+		{
+			"question": "Which meeting link option may not show up if it hasn't been integrated with the user's profile?",
+			"answers": ["Zoom & Google Meet"],
+			"iframe": ""
+		},
+		{
+			"question": "What's the difference between calendar availability and user availability?",
+			"answers": [
+				"Calendar availability reflects the business's start time and day of the week, while user availability specifies the user's working hours."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "How does user availability impact appointment bookings?",
+			"answers": [
+				"It influences which team member's availability is considered when a lead books."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "Why is the first row of a CSV file important?",
+			"answers": ["It must not be blank"],
+			"iframe": ""
+		},
+		{
+			"question": "What are the contact requirements need for the system to link data back to the contact?",
+			"answers": ["An email or phone number"],
+			"iframe": ""
+		},
+		{
+			"question": "Which field type has case-sensitive and spelling-sensitive requirements?",
+			"answers": ["Radio button"],
+			"iframe": ""
+		},
+		{
+			"question": "Why is cleaning a CSV file important before uploading?",
+			"answers": [
+				"To prevent sending duplicate SMS",
+				"To avoid duplicate messaging",
+				"To improve contact organization"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the suggested approach to identifying duplicate values?",
+			"answers": ["Highlight columns with conditional formatting"],
+			"iframe": ""
+		},
+		{
+			"question": "If not corrected, how are duplicate records typically handled when uploading the file?",
+			"answers": ["The first duplicate is kept"],
+			"iframe": ""
+		},
+		{
+			"question": "Why is the 'Remove Duplicates' function in Excel not recommended?",
+			"answers": ["It removes entire contact records"],
+			"iframe": ""
+		},
+		{
+			"question": "Who can access the 'Import Contacts' feature?",
+			"answers": ["Location admin"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of using the 'None' option for unique identifiers?",
+			"answers": ["To generate unique contact IDs for each row"],
+			"iframe": ""
+		},
+		{
+			"question": "In the mapping view (before importing list), how are unmatched fields handled?",
+			"answers": ["They can be manually mapped (custom fields) or skipped"],
+			"iframe": ""
+		},
+		{
+			"question": "When might you enable the 'Allow Duplicate Contacts' setting?",
+			"answers": ["When importing contacts with shared email/phone numbers"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the benefit of using contact IDs as identifiers during import?",
+			"answers": [
+				"It helps create records for contacts using the contact ID instead of relying solely on email and phone numbers as the unique identifiers."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is one reason for exporting contacts and custom fields?",
+			"answers": ["To perform data analysis in Excel"],
+			"iframe": ""
+		},
+		{
+			"question": "Which of the following fields are included in the default export?",
+			"answers": ["Name, email, phone B", "Create date, last activity", "Tags"],
+			"iframe": ""
+		},
+		{
+			"question": "How can additional custom fields be included in an export?",
+			"answers": ["By selecting them in the 'columns' menu"],
+			"iframe": ""
+		},
+		{
+			"question": "How can you choose specific contacts for export?",
+			"answers": [
+				"By selecting based on parameters set in your smartlist or manually checking the box next to the contacts name"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the primary purpose of smart lists?",
+			"answers": ["To segment leads/contacts based on specific criteria."],
+			"iframe": ""
+		},
+		{
+			"question": "In filtering, what is the function of 'and' conditions?",
+			"answers": [
+				"To combine multiple filters and find leads that meet all conditions."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of the 'is not' filter option?",
+			"answers": ["To exclude leads that meet a specific condition."],
+			"iframe": ""
+		},
+		{
+			"question": "How can smart lists be shared with other users?",
+			"answers": [
+				"By granting access to users within the 'Manage smart list' area."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the primary purpose of the Company Object feature in the CRM?",
+			"answers": ["To facilitate communication within organizations"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the significance of the 'Company Object' feature when dealing with ",
+			"answers": ["It centralizes all contacts into a single company entity."],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of creating custom fields in the CRM?",
+			"answers": ["To store specific information about contacts"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of creating and managing tasks within the system?",
+			"answers": ["To remind individuals to complete specific actions."],
+			"iframe": ""
+		},
+		{
+			"question": "Which of the following statements about task assignment is correct?",
+			"answers": [
+				"Tasks can be assigned to users, regardless of their connection to contacts."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of using internal notifications for task reminders?",
+			"answers": ["To remind users about upcoming tasks."],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of the restore option in the contacts?",
+			"answers": ["To recover accidentally deleted contacts in bulk"],
+			"iframe": ""
+		},
+		{
+			"question": "What is restored when you perform a bulk restore of contacts?",
+			"answers": [
+				"Conversation, Notes, Opportunities, Tasks, Appointments, Manual Actions."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "How can you initiate the restoration of contacts individually from the 'Audit Logs'?",
+			"answers": [
+				"By selecting the 'Force Restore' option for the contact in the 'Audit Logs'"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of custom fields in contact records?",
+			"answers": ["To create unique questions and data fields per contact"],
+			"iframe": ""
+		},
+		{
+			"question": "How can custom fields be organized for easier access?",
+			"answers": ["By utilizing custom folders to group related fields."],
+			"iframe": ""
+		},
+		{
+			"question": "What advantage does organizing custom fields into folders offer?",
+			"answers": ["Better categorization and prioritization of information"],
+			"iframe": ""
+		},
+		{
+			"question": "What are bulk actions used for within the platform's contact tab?",
+			"answers": ["Handling operations on a larger scale"],
+			"iframe": ""
+		},
+		{
+			"question": "What types of bulk actions can be performed in the CRM?",
+			"answers": ["Adding tags", "Sending emails", "Importing contacts"],
+			"iframe": ""
+		},
+		{
+			"question": "In the context of bulk email campaigns, which factors can affect the data being returned to the CRM from bulk action(s)?",
+			"answers": ["The SMTP provider used for sending emails"],
+			"iframe": ""
+		},
+		{
+			"question": "How can users hide specific pipeline stages from the dashboard view?",
+			"answers": [
+				"By toggling the visibility settings located within the pipeline builder"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What does marking an opportunity as 'Won' typically indicate?",
+			"answers": [
+				"The opportunity has been successfully 'Won' and moved out of the open stage."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the benefit of attributing a lead's value within the pipeline?",
+			"answers": [
+				"It visibly displays the dollar denomination of the lead for the opportunity."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of automating opportunities within pipelines?",
+			"answers": ["To streamline and standardize opportunity management"],
+			"iframe": ""
+		},
+		{
+			"question": "Which automation trigger is suitable for moving contacts between stages?",
+			"answers": ["Pipeline stage changed"],
+			"iframe": ""
+		},
+		{
+			"question": "What does the 'Opportunity Status' action allow users to do?",
+			"answers": ["Update the status of an opportunity"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the primary purpose of creating invoices in the system?",
+			"answers": ["To keep track of expenses and get paid for services"],
+			"iframe": ""
+		},
+		{
+			"question": "Which section of the system should you navigate to in order to create invoices?",
+			"answers": ["Payments"],
+			"iframe": ""
+		},
+		{
+			"question": "How can you apply a discount to an invoice?",
+			"answers": ["Manually add it after adding a product to the invoice"],
+			"iframe": ""
+		},
+		{
+			"question": "Which statement accurately describes the current capability of adding taxes?",
+			"answers": [
+				"Taxes must be manually added to invoices as they are not currently supported on checkout forms."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "In the system, how are taxes associated with specific clients or business locations?",
+			"answers": [
+				"Taxes must be manually pre-built and linked to corresponding clients."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "How can taxes be integrated with SaaS payment links in the system?",
+			"answers": [
+				"Taxes are set up using the SaaS configurator for Stripe checkout."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "Which payment gateways can be integrated to enable the creation of invoices?",
+			"answers": ["Both PayPal and Stripe"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of enabling auto-payment for recurring invoices?",
+			"answers": [
+				"To automatically charge the same card used for the first payment"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "Which of the following statements are true about recurring invoices?",
+			"answers": [
+				"Recurring invoices can be created for subscription-based products.",
+				"Discounts can be applied to items in recurring invoices.",
+				"Recurring invoices can be scheduled to be sent monthly, weekly, or yearly."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "Which of the following details are listed for each subscription?",
+			"answers": ["Status of the subscription"],
+			"iframe": ""
+		},
+		{
+			"question": "Who can access the Subscription page?",
+			"answers": ["Users on any plan"],
+			"iframe": ""
+		},
+		{
+			"question": "What filters are available on the Subscription page? (Select all that apply)",
+			"answers": ["Subscription status"],
+			"iframe": ""
+		},
+		{
+			"question": "What information is displayed on the Orders page?",
+			"answers": ["Customer names, source of order, and order status"],
+			"iframe": ""
+		},
+		{
+			"question": "Is the Orders page available for all pricing plans?",
+			"answers": ["Yes"],
+			"iframe": ""
+		},
+		{
+			"question": "What information about the ordered items can users find on the Orders page?",
+			"answers": ["Item names and the quantity ordered"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of the transactions page?",
+			"answers": ["To track customer payments"],
+			"iframe": ""
+		},
+		{
+			"question": "What information is displayed for each transaction on the transactions page?",
+			"answers": ["Transaction date", "Payment source"],
+			"iframe": ""
+		},
+		{
+			"question": "How can you filter transactions on the transactions page? (Select all that apply)",
+			"answers": ["By payment mode"],
+			"iframe": ""
+		},
+		{
+			"question": "Which section under the account or location should you navigate to in order to find products?",
+			"answers": ["Payments"],
+			"iframe": ""
+		},
+		{
+			"question": "Which payment option listed below does NOT support products? (The user would need to manually input the monetary value)",
+			"answers": ["Text to pay"],
+			"iframe": ""
+		},
+		{
+			"question": "What Payment integrations are offered in the system? (Select all that apply)",
+			"answers": ["Stripe", "Authorize.net", "Paypal", "NMI"],
+			"iframe": ""
+		},
+		{
+			"question": "Which type of products can be added to an order form?",
+			"answers": ["Products that have been previously created/ imported"],
+			"iframe": ""
+		},
+		{
+			"question": "What determines whether a product is a main product or a bump product?",
+			"answers": [
+				"A specific option is selected when adding the product to the page where it will be sold"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "How can users verify the products added to the order form?",
+			"answers": ["By previewing the page with the order form"],
+			"iframe": ""
+		},
+		{
+			"question": "What does the text-to-pay links feature allow users to do?",
+			"answers": ["Request manual payments through the Conversations tab"],
+			"iframe": ""
+		},
+		{
+			"question": "What payment processor is needed to utlize the 'text-to-pay' links feature?",
+			"answers": ["Stripe"],
+			"iframe": ""
+		},
+		{
+			"question": "What can users customize when creating text-to-pay a payment request?",
+			"answers": ["Product name, price, due date, and additional options"],
+			"iframe": ""
+		},
+		{
+			"question": "What are the two main types of coupons mentioned in the video? (Select all that apply)",
+			"answers": ["Fixed coupons", "Percentage coupons"],
+			"iframe": ""
+		},
+		{
+			"question": "What can you restrict when creating a coupon? (Select all that apply)",
+			"answers": ["Number of redemptions", "Specific products"],
+			"iframe": ""
+		},
+		{
+			"question": "What information is needed to enable automatic sales receipts? (Select all that apply)",
+			"answers": [
+				"Title",
+				"Receipt prefix",
+				"Receipt start number",
+				"Email template"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "Which functionality is not available in payment settings?",
+			"answers": ["Customizing payment links"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of adding tax information in payment settings?",
+			"answers": ["To specify the tax rate and details for invoices"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of A/B split testing in email campaigns?",
+			"answers": [
+				"To analyze the success of subject lines and content variations"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the minimum number of contacts required for a split test with six variations?",
+			"answers": ["60 contacts"],
+			"iframe": ""
+		},
+		{
+			"question": "What does the 'version history' feature allow users to do?",
+			"answers": ["Restore previous template versions"],
+			"iframe": ""
+		},
+		{
+			"question": "Why is using email providers like Mailgun or LC email recommended?",
+			"answers": ["They have direct API integration for better data tracking."],
+			"iframe": ""
+		},
+		{
+			"question": "What does RSS scheduling allow you to do?",
+			"answers": ["Send emails in response to RSS feed updates."],
+			"iframe": ""
+		},
+		{
+			"question": "In the context of email campaigns, what does the 'unique open rate' represent?",
+			"answers": [
+				"The percentage of contacts who opened the email at least once."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the primary purpose of a trigger link?",
+			"answers": ["To attribute clicks and trigger actions in workflows."],
+			"iframe": ""
+		},
+		{
+			"question": "Which type of communication channels can trigger links be used in?",
+			"answers": ["SMS and email"],
+			"iframe": ""
+		},
+		{
+			"question": "How can a trigger link be used to initiate a workflow?",
+			"answers": [
+				"By selecting the trigger link 'Trigger' in the workflow settings."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "Where can you find workflows within the system?",
+			"answers": ["Automation tab of the sub account or location"],
+			"iframe": ""
+		},
+		{
+			"question": "What are workflow triggers?",
+			"answers": ["Actions that initiate specific sequence of events"],
+			"iframe": ""
+		},
+		{
+			"question": "What does the 'allow reentry' setting in workflows do when enabled?",
+			"answers": ["Allows contacts to re-enter an active workflow"],
+			"iframe": ""
+		},
+		{
+			"question": "Which of the following actions can be performed within workflows? (Select all that apply)",
+			"answers": [
+				"Sending automated emails or SMS",
+				"Assigning tasks to users"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What does the 'marked as read' setting in communication settings do?",
+			"answers": [
+				"Marks all outgoing automated messages as read in the conversation tab"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "Why would someone choose to build a workflow instead of using the default auto-missed call text-back feature in sub-accounts? (Select all that apply)",
+			"answers": ["Throttle options"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of the auto-missed call text back feature?",
+			"answers": [
+				"To prevent missed opportunities",
+				"Quicker response to missed calls.",
+				"Capture the leads interest before they move onto the next business"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "Where would a user disable the default auto-missed call text back feature for newly generated sub-accounts?",
+			"answers": [
+				"Within the business profile settings located in the sub-account settings"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of the 'No Show Nurture' recipe?",
+			"answers": ["To promote rescheduling after no-shows"],
+			"iframe": ""
+		},
+		{
+			"question": "What trigger would be required for a No-Show workflow to fire/execute when the appointment status is set to 'No Show'?",
+			"answers": [
+				"'Appointment Status' triggers with an appointment status filter set to 'No-show'."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "Why is it important to remove leads from the 'No Show Nurture' after booking?",
+			"answers": [
+				"To avoid overwhelming users with unintentional messages urging them to book, etc."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "How can you grant a user access to a specific feature if they can't see it?",
+			"answers": [
+				"Adjust the user's permissions and ensure that the sub-account has the specific feature enabled within the agency view."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "On which subscription plan is the split-testing feature available in the Funnel Builder?",
+			"answers": ["All subscription plans"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the process to add a product to a page in the Funnel Builder?",
+			"answers": ["Create the product under payments, then add it to the page"],
+			"iframe": ""
+		},
+		{
+			"question": "Which option is NOT available under the settings section of the Funnel Builder?",
+			"answers": ["adding a domains DNS records"],
+			"iframe": ""
+		},
+		{
+			"question": "Why can't a single domain be used for both hosting a website and sending emails?",
+			"answers": [
+				"Each domain must have a dedicated purpose to avoid conflicts"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What does DNS propagation refer to?",
+			"answers": ["The time it takes for DNS records to be added and mapped"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of a 'custom 404 page'?",
+			"answers": ["To handle broken links and user input errors in URLs."],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of the 'layers' feature within the page builder?",
+			"answers": [
+				"To highlight specific sections and navigate within containers."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "Which elements can you add to your page to display videos?",
+			"answers": ["Hosted videos, HTML5 videos, YouTube videos, and more."],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of the 'two-step order form' element?",
+			"answers": [
+				"It requires users to enter their contact details before proceeding to payment."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "How can you customize the appearance of navigation menus in the page builder?",
+			"answers": ["By adjusting spacing, colors, typography, and more."],
+			"iframe": ""
+		},
+		{
+			"question": "What can you achieve by using the SEO metadata settings?",
+			"answers": ["Optimize the page's appearance on search engine results."],
+			"iframe": ""
+		},
+		{
+			"question": "What is one of the main use cases of forms mentioned in the video?",
+			"answers": ["Collecting data from users/leads"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of the 'Analyze' tab for forms?",
+			"answers": ["To view and categorize form submissions"],
+			"iframe": ""
+		},
+		{
+			"question": "Which type of field is suitable for alphanumeric input?",
+			"answers": ["Single or multi line"],
+			"iframe": ""
+		},
+		{
+			"question": "How can forms be added to funnels and websites in the builder?",
+			"answers": ["Using the native 'form element' in the page builder"],
+			"iframe": ""
+		},
+		{
+			"question": "When embedding forms in third-party platforms, what is the purpose of the 'Copy Embed' option?",
+			"answers": ["To obtain the embed code for the form"],
+			"iframe": ""
+		},
+		{
+			"question": "Where would you connect a custom form to a calendar?",
+			"answers": ["Calendar customization settings"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the primary focus of the tutorial?",
+			"answers": ["Form-triggered workflow and notification"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of a trigger in a workflow?",
+			"answers": ["To activate actions in the workflow"],
+			"iframe": ""
+		},
+		{
+			"question": "How does the tutorial suggest redirecting 'users' (not leads) upon clicking the notification?",
+			"answers": ["By using the 'Internal action' action in the workflow"],
+			"iframe": ""
+		},
+		{
+			"question": "How does the presenter recommend structuring a survey for best practices?",
+			"answers": ["Keep one question per slide"],
+			"iframe": ""
+		},
+		{
+			"question": "How can auto-navigation be disabled in a survey?",
+			"answers": ["By configuring it in the survey settings"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the main difference between the form builder and the survey builder?",
+			"answers": ["The survey builder has slides"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of setting up a workflow for survey submissions?",
+			"answers": [
+				"To automate notifications and actions based on survey responses"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "Why is it important to use filters when creating a workflow for survey submissions?",
+			"answers": ["Filters help specify when the workflow should be triggered"],
+			"iframe": ""
+		},
+		{
+			"question": "What happens if a survey taker submits only part of the survey and leaves some questions unanswered?",
+			"answers": ["The survey data may come back with missing information"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of setting up a workflow for survey submissions?",
+			"answers": [
+				"To facilitate discussion, learning, networking, and knowledge sharing"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of the client-facing portal discussed in the video?",
+			"answers": ["To provide a link for customers to log-in or sign-up."],
+			"iframe": ""
+		},
+		{
+			"question": "What is the primary function of the affiliate manager portal in the community login?",
+			"answers": [
+				"To facilitate discussions and learning among community members"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "Which user roles have the ability to create new channels within a group?",
+			"answers": ["Admins"],
+			"iframe": ""
+		},
+		{
+			"question": "In a group, which roles can approve or decline membership requests? (Select all that apply)",
+			"answers": ["Admins"],
+			"iframe": ""
+		},
+		{
+			"question": "What happens when a group is archived?",
+			"answers": ["All members are automatically removed"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of reputation management in the system",
+			"answers": [
+				"To manage and improve online reviews improve SEO rankings and keep business content new and relevant"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "How can users customize the review widget's appearance?",
+			"answers": [
+				"By selecting customizable options within the reputation management tab, located in the sub-account settings."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "How can you customize the messaging for email and SMS review requests?",
+			"answers": [
+				"By enabling the respective options and editing the copy and messaging in the reputation settings section"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the prerequisite for accessing notification settings, as demonstrated in the video?",
+			"answers": [
+				"Being a user within that sub-account, or being 'logged in' as the user within the sub-account"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "How does configuring user profile notifications contribute to workflow management?",
+			"answers": [
+				"It can reduce the number of internal notifications needed for day to day communications."
+			],
+			"iframe": ""
+		},
+		{
+			"question": "Why is the LC Trust Center necessary?",
+			"answers": ["To crack down on spam/robo calls & scams"],
+			"iframe": ""
+		},
+		{
+			"question": "Who is eligible to use the LeadConnector Trust Center?",
+			"answers": ["Sub-accounts who use LeadConnector telephony service"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the initial step to access the Trust Center?",
+			"answers": ["Verify the business profile"],
+			"iframe": ""
+		},
+		{
+			"question": "Why is it important to use a custom domain for email sending?",
+			"answers": [
+				"Unlike a shared domain, it provides a dedicated sending domain.",
+				"It provides better email deliverability (one of many factors)",
+				"Custom domains help establish brand identity"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What should you consider when sending emails from a brand-new domain?",
+			"answers": ["New domains require time for propagation and domain warmup"],
+			"iframe": ""
+		},
+		{
+			"question": "What happens during the propagation period for DNS records?",
+			"answers": ["DNS records may take time to update across the internet"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of the reply and forward settings discussed in the video?",
+			"answers": ["To manage the forwarding and reply-to email addresses"],
+			"iframe": ""
+		},
+		{
+			"question": "How can forwarding addresses be added to the email inbox?",
+			"answers": ["By entering them in the email settings"],
+			"iframe": ""
+		},
+		{
+			"question": "What happens when an email is replied to using the reply address set in the settings?",
+			"answers": ["The reply is sent to the specified email address only"],
+			"iframe": ""
+		},
+		{
+			"question": "How can users access SMS compliance customization settings?",
+			"answers": ["In the sub-account's settings"],
+			"iframe": ""
+		},
+		{
+			"question": "What are some keywords that can be used in the opt-out message?",
+			"answers": ["Stop, stop all, unsubscribe, cancel, end"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the purpose of including sender information in SMS messages?",
+			"answers": [
+				"To increase message deliverability and comply with regulatory bodies"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the primary purpose of unsubscribed links in email communication?",
+			"answers": [
+				"To provide recipients with the option to opt out of receiving emails"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What are the potential consequences of not complying with email regulations?",
+			"answers": ["Account suspension"],
+			"iframe": ""
+		},
+		{
+			"question": "How can users customize the messaging for unsubscribed links when using the default LC email feature?",
+			"answers": [
+				"By editing the messaging in the business settings within the sub-account"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "What is the primary purpose of trigger links in email campaigns?",
+			"answers": ["To track user interactions (clicks) with emails"],
+			"iframe": ""
+		},
+		{
+			"question": "What is the benefit of using goal events for trigger link clicks in workflows?",
+			"answers": [
+				"It allows for conditional actions based on user interactions (clicks)"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "In the tutorial, what is the reason for creating multiple trigger links for different campaigns?",
+			"answers": [
+				"To increase email open rates",
+				"To segment users based on their email preferences",
+				"To prevent users from unsubscribing to from all outbound email"
+			],
+			"iframe": ""
+		},
+		{
+			"question": "Onboarding SOP",
+			"answers": [
+				"Our standard operation proceed for handling an onboarding call."
+			],
+			"iframe": "https://docs.google.com/document/d/e/2PACX-1vRp0dqvh5T_6HCxZSBCVa3oTQ9FEprzXO_cpF1uqLOdaXSuSsy4rMZXSpQK1ZhjfBL-SA56RqNdu7hQ/pub?embedded=true"
+		}
+	]
+}

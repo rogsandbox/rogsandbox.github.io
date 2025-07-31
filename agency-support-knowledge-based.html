@@ -76,7 +76,7 @@
 					filteredArticles.forEach((fa) => {
 						const title = fa[0] ?? "";
 						const descriptions = (fa[1] ?? "")
-							.split(",")
+							.split("|")
 							.map((desc) => desc.trim());
 						const iframeSrc = fa[2];
 
