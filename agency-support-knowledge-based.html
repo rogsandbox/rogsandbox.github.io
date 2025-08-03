@@ -128,6 +128,10 @@
 						const iframe = document.createElement("iframe");
 
 						iframe.src = this.dataset["iframeSrc"];
+						iframe.setAttribute("webkitallowfullscreen", true);
+						iframe.setAttribute("mozallowfullscreen", true);
+						iframe.setAttribute("allowfullscreen", true);
+
 						closeBtn.classList.add("close-iframe");
 						closeBtn.textContent = "X";
 						closeBtn.onclick = handleCloseIframe;
